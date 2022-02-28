@@ -20,9 +20,38 @@ import requests
 from google.oauth2 import service_account
 import pygsheets
 
-from app_functions import derive_columns, derive_etf_columns, make_df, convert_df
+from app_functions import derive_columns, derive_etf_columns
 
 def app():
+    #-----------------------------
+    # Internal functions
+    #----------------------------
+    @st.cache
+    def make_df_i(spreadsheet_id, sheetname):
+        gc = pygsheets.authorize(service_account_file= 'pages/gsheet-key.json')
+        sh = gc.open_by_key(spreadsheet_id)
+        worksheet = sh.worksheet(property= 'title', value= sheetname)
+        df = worksheet.get_as_df()
+        return df
+    
+    @st.cache
+    def make_df(spreadsheet_id, sheetname):
+        credentials = service_account.Credentials.from_service_account_info(
+            st.secrets["gcp_service_account"],
+            scopes=[
+                "https://www.googleapis.com/auth/spreadsheets",
+                ],
+        )
+        gc = pygsheets.authorize(custom_credentials= credentials)
+        sh = gc.open_by_key(spreadsheet_id)
+        worksheet = sh.worksheet(property= 'title', value= sheetname)
+        df = worksheet.get_as_df()
+        return df
+
+    @st.cache
+    def convert_df(df):
+         # IMPORTANT: Cache the conversion to prevent computation on every rerun
+         return df.to_csv().encode('utf-8')
     #--------------------------------------
     # Date object
     #---------------------------------------
@@ -83,15 +112,9 @@ def app():
     
 #     df = make_df(spreadsheet_id, 'Daily ARK data').astype(str)
 #     st.write(df)
-    @st.cache
-    def make_df_i(spreadsheet_id, sheetname):
-        gc = pygsheets.authorize(service_account_file= 'pages/gsheet-key.json')
-        sh = gc.open_by_key(spreadsheet_id)
-        worksheet = sh.worksheet(property= 'title', value= sheetname)
-        df = worksheet.get_as_df()
-        return df
+
     
-    df = make_df_i(spreadsheet_id, 'Daily ARK data').astype(str)
+    df = make_df(spreadsheet_id, 'Daily ARK data').astype(str)
     st.dataframe(df)
     
     st.download_button(
