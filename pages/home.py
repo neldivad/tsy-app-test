@@ -7,9 +7,9 @@ def app():
 
   st.sidebar.title("Resources")
   with st.sidebar:
-     st.download_button(label="The C Prog language by K & R", data="https://kremlin.cc/k&r.pdf", file_name="The C Prog language by K & R")
-     st.download_button(label="Beej’s Guide to C Programming", data="https://beej.us/guide/bgc/pdf/bgc_a4_bw_2.pdf", file_name=None)
-     st.download_button(label="The Basics of C Programming", data="https://www.phys.uconn.edu/~rozman/Courses/P2200_13F/downloads/TheBasicsofCProgramming-draft-20131030.pdf", file_name=None)
+     st.download_button(label="Download button 1", data="https://kremlin.cc/k&r.pdf", file_name="some file name")
+     st.download_button(label="Download button 2", data="https://beej.us/guide/bgc/pdf/bgc_a4_bw_2.pdf", file_name='some file name 2')
+     st.download_button(label="Pfft", data="https://www.phys.uconn.edu/~rozman/Courses/P2200_13F/downloads/TheBasicsofCProgramming-draft-20131030.pdf", file_name='some file name 3')
      st.markdown('> Join my discord community.')
      components.html(
     """<iframe src="https://discord.com/widget?id=749377367482433677&theme=dark" width="280" height="380" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>""",
@@ -52,6 +52,8 @@ def app():
                 <br/><br/>
                 """,
              unsafe_allow_html=True)
+      
+    st.video("https://www.youtube.com/watch?v=0G1b4gOsrRE&t=4s", format="video/mp4", start_time=0)
 
     with st.expander("Constants - const keyword (or) #define preprocessor",
                  expanded=True):
@@ -209,7 +211,8 @@ def app():
       df = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSJ5B9E5p6MbKot2HBwAwkGGr_YxVJWgUdTgUVvamEtI6Vo2IdsqcjUq-MCdVoJD7dYpawtaHxgfSNO/pub?output=csv") 
       st.dataframe(df)
 
-  
+    st.video("https://www.youtube.com/watch?v=0G1b4gOsrRE&t=4s", format="video/mp4", start_time=0)
+    
     with st.expander("Library functions", expanded = True):
       st.write("""
                 - <assert.h> - Program assertion functions
