@@ -220,4 +220,4 @@ def make_corr_map(data, title, zmin=-1, zmax=1, height=600, width= 800):
     )
 
     fig=go.Figure(data=[heat], layout=layout)
-    return fig
+    return fig 
