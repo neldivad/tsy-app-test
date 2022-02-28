@@ -90,7 +90,7 @@ def derive_etf_columns(df):
     df['d_mv']         = df.groupby(['fund', 'ticker'])['market value ($)'].diff()
     df['d_shares (%)'] = df['d_shares'] *100 / df.groupby(['fund', 'ticker'])['shares'].shift(1) 
     df['d_mv (%)']     = df['d_mv'] *100 / df.groupby(['fund', 'ticker'])['market value ($)'].shift(1) 
-    df['d_weight (%)'] = df.groupby(['fund', 'ticker'])['weight (%)'].diff()
+    df['d_weight (%)'] = df.groupby(['fund', 'ticker'])['weight (%)'].diff() 
     
     
     # Get rank for the day
