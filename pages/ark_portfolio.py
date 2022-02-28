@@ -95,7 +95,7 @@ def app():
     expander_etf= st.expander('Select ETF')
     ms_etfs = expander_etf.multiselect('', etfs, etfs[:3] )
     for df in ms_etfs:
-        data = make_df_i(spreadsheet_id, f'Daily {df} data').astype(str)
+        data = make_df(spreadsheet_id, f'Daily {df} data').astype(str)
         expander_etf.subheader(f'Data for {df}')
         expander_etf.write(data)
         expander_etf.download_button(
