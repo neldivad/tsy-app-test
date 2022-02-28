@@ -11,8 +11,10 @@ def app():
      st.download_button(label="Download button 2", data="https://beej.us/guide/bgc/pdf/bgc_a4_bw_2.pdf", file_name='some file name 2')
      st.download_button(label="Pfft", data="https://www.phys.uconn.edu/~rozman/Courses/P2200_13F/downloads/TheBasicsofCProgramming-draft-20131030.pdf", file_name='some file name 3')
      st.markdown('> Join my discord community.')
-     components.html(
-    """<iframe src="https://discord.com/widget?id=749377367482433677&theme=dark" width="280" height="380" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>""",
+     components.html("""
+    <iframe src="https://discord.com/widget?id=749377367482433677&theme=dark" width="280" height="380" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7LhsgxH9e9ZvF9yxyEz0wR?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    """,
     height=400,)
 
   st.subheader("Popular uploads")
