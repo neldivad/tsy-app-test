@@ -81,8 +81,12 @@ def app():
     test_df = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSJ5B9E5p6MbKot2HBwAwkGGr_YxVJWgUdTgUVvamEtI6Vo2IdsqcjUq-MCdVoJD7dYpawtaHxgfSNO/pub?output=csv") 
     st.dataframe(test_df)
     
-    df = make_df(spreadsheet_id, 'Daily ARK data').astype(str)
-    st.write(df)
+#     df = make_df(spreadsheet_id, 'Daily ARK data').astype(str)
+#     st.write(df)
+    
+    df = make_df(spreadsheet_id, 'Daily ARK data')
+    st.dataframe(df)
+    
     st.download_button(
         label='Click to download CSV file', 
         data= convert_df(df), 
