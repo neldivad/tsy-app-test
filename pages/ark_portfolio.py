@@ -20,7 +20,7 @@ import requests
 from google.oauth2 import service_account
 import pygsheets
 
-from app_functions import derive_columns, derive_etf_columns
+from app_functions import derive_columns, derive_etf_columns 
 
 def app():
     #----------------------------------
