@@ -175,7 +175,7 @@ def make_line_chart(
         x=0.9, y=0.15,
         sizex=0.4, sizey=0.4,
         xanchor="center", yanchor="bottom",
-        layer= "below"
+        layer= "below",
       )]
     return fig
 
