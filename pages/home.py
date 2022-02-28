@@ -17,6 +17,8 @@ def app():
 
   st.subheader("Popular uploads")
   st_player("https://www.youtube.com/watch?v=0G1b4gOsrRE&t=4s")
+  st.video("https://www.youtube.com/watch?v=0G1b4gOsrRE&t=4s", format="video/mp4", start_time=0)
+
 
 #   with st.expander("Roadmap", expanded=True): 
 #     st.image("assets/tickersymbolyou-transparent.png")
