@@ -24,7 +24,7 @@ def app():
     #----------------------------------
     # Helper function (can't seem to import properly)
     #---------------------------------
-    from app_functions import derive_columns, derive_etf_columns 
+    from app_functions2 import derive_columns, derive_etf_columns 
     # @st.cache # cache seems to break the code
     def make_df(spreadsheet_id, sheetname):
         credentials = service_account.Credentials.from_service_account_info(
