@@ -93,6 +93,7 @@ def app():
 
 
   with col2:
+    st.video("https://www.youtube.com/watch?v=0G1b4gOsrRE&t=4s", format="video/mp4", start_time=0)
     with st.expander("Operators", expanded=True):
       st.text("Arithmetic Operators")
       st.write("""
