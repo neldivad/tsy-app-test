@@ -61,7 +61,7 @@ def app():
     spreadsheet_id = st.secrets['gsheet_id']
         # dnd
     st.write(spreadsheet_id)
-    st.write(st.secrets["gcp_service_account"]
+    st.write(st.secrets["gcp_service_account"])
     #----------------
     # Title
     #---------------
