@@ -14,8 +14,7 @@ def app():
      components.html("""
     <iframe src="https://discord.com/widget?id=749377367482433677&theme=dark" width="280" height="380" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7LhsgxH9e9ZvF9yxyEz0wR?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    """,
-    height=400,)
+    """,)
 
   st.subheader("Popular uploads")
   st_player("https://www.youtube.com/watch?v=0G1b4gOsrRE&t=4s")
