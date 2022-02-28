@@ -12,7 +12,8 @@ def app():
      st.download_button(label="The Basics of C Programming", data="https://www.phys.uconn.edu/~rozman/Courses/P2200_13F/downloads/TheBasicsofCProgramming-draft-20131030.pdf", file_name=None)
      st.markdown('> Join my discord community.')
      components.html(
-    """<iframe src="https://discord.com/widget?id=818551736809422848&theme=dark" width="280" height="380" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>""",
+    #"""<iframe src="https://discord.com/widget?id=818551736809422848&theme=dark" width="280" height="380" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>""",
+    """<iframe src="https://discord.gg/9UHrHex4JX" width="280" height="380" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>""",
     height=400,)
 
   st.caption("Revise on the go")
