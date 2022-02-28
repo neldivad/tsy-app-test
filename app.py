@@ -3,7 +3,7 @@ from streamlit_player import st_player
 
 # Custom imports 
 from multipage import MultiPage
-from pages import cheat_sheet, keywords, pointers, arrays, data_structures, problems
+from pages import home
 
 st.set_page_config(
      page_title="Ticker Symbol YOU | Channel that invests in you",
@@ -27,12 +27,12 @@ app = MultiPage()
 st.title("Ticker Symbol You")
 st.subheader("C Lang Cheatsheet")
 # Add all your application here
-app.add_page("CHEAT SHEET", cheat_sheet.app)
-app.add_page("KEYWORDS", keywords.app)
-app.add_page("ARRAYS", arrays.app)
-app.add_page("POINTERS", pointers.app)
-app.add_page("DATA STRUCTURES", data_structures.app)
-app.add_page("PROBLEMS", problems.app)
+app.add_page("CHEAT SHEET", home.app)
+# app.add_page("KEYWORDS", keywords.app)
+# app.add_page("ARRAYS", arrays.app)
+# app.add_page("POINTERS", pointers.app)
+# app.add_page("DATA STRUCTURES", data_structures.app)
+# app.add_page("PROBLEMS", problems.app)
 
 # The main app
 app.run() 
