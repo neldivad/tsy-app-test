@@ -233,6 +233,8 @@ def app():
   st.subheader("Order of Precedence")
   df = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSJ5B9E5p6MbKot2HBwAwkGGr_YxVJWgUdTgUVvamEtI6Vo2IdsqcjUq-MCdVoJD7dYpawtaHxgfSNO/pub?gid=600762557&single=true&output=csv") 
   st.dataframe(df)
+  
+  st.video("https://www.youtube.com/watch?v=0G1b4gOsrRE&t=4s", format="video/mp4", start_time=0)
 
   st.subheader("Functions")
   st.caption("Functions are used to divide the code and to avoid repetitive task. It provides reusability and readability to code.")
