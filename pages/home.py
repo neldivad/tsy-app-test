@@ -7,9 +7,7 @@ def app():
 
   st.sidebar.title("Resources")
   with st.sidebar:
-     st.download_button(label="Download button 1", data="https://kremlin.cc/k&r.pdf", file_name="some file name.pdf", mime='text/pdf')
-     st.download_button(label="Download button 2", data="https://beej.us/guide/bgc/pdf/bgc_a4_bw_2.pdf", file_name='some file name 2')
-     st.download_button(label="Pfft", data="https://www.phys.uconn.edu/~rozman/Courses/P2200_13F/downloads/TheBasicsofCProgramming-draft-20131030.pdf", file_name='some file name 3')
+     st.download_button(label="Download button 1", data="https://raw.githubusercontent.com/napoles-uach/MundaneApps/main/links.txt", file_name="some file name.txt", mime='text/txt')
      st.markdown('> Join my discord community.')
      components.html("""
     <iframe src="https://discord.com/widget?id=749377367482433677&theme=dark" width="280" height="380" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
