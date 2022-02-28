@@ -4,7 +4,7 @@ from streamlit_player import st_player
 
 # Custom imports 
 from multipage import MultiPage
-from pages import home, pr
+from pages import home, pr, ark_portfolio
 
 st.set_page_config(
      page_title="Ticker Symbol YOU | Channel that invests in you",
@@ -28,7 +28,7 @@ st.subheader("Random text here so I know where I put it")
 # Add all your application here
 app.add_page("Wassup", home.app)
 app.add_page("PR", pr.app)
-app.add_page("ARK Invest Portfolio", ark-portfolio.app)
+app.add_page("ARK Invest Portfolio", ark_portfolio.app)
 # app.add_page("POINTERS", pointers.app)
 # app.add_page("DATA STRUCTURES", data_structures.app)
 # app.add_page("PROBLEMS", problems.app)
