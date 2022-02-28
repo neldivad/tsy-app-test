@@ -21,7 +21,7 @@ def make_df_i(spreadsheet_id, sheetname):
     # Do not upload
 
 
-@st.cache(hash_funcs={"_thread.RLock": lambda _: None})
+@st.cache
 def make_df(spreadsheet_id, sheetname):
     credentials = service_account.Credentials.from_service_account_info(
         st.secrets["gcp_service_account"],
