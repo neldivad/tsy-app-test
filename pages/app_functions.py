@@ -25,7 +25,7 @@ def make_df(spreadsheet_id, sheetname):
     df = worksheet.get_as_df()
     return df
 
-@st.cache
+# @st.cache
 def convert_df(df):
      # IMPORTANT: Cache the conversion to prevent computation on every rerun
      return df.to_csv().encode('utf-8')
