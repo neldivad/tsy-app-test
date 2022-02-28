@@ -11,7 +11,7 @@ import plotly.graph_objects as go
 ################################
 # Dataframe uploads and downloads
 ################################
-@st.cache
+# @st.cache
 def make_df(spreadsheet_id, sheetname):
     credentials = service_account.Credentials.from_service_account_info(
         st.secrets["gcp_service_account"],
