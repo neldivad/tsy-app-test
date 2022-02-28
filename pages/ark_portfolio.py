@@ -20,9 +20,31 @@ import requests
 from google.oauth2 import service_account
 import pygsheets
 
-from app_functions import derive_columns, derive_etf_columns, make_df, convert_df
+from app_functions import derive_columns, derive_etf_columns
 
 def app():
+    #----------------------------------
+    # Helper function (can't seem to import properly)
+    #---------------------------------
+    # @st.cache # cache seems to break the code
+    def make_df(spreadsheet_id, sheetname):
+        credentials = service_account.Credentials.from_service_account_info(
+            st.secrets["gcp_service_account"],
+            scopes=[
+                "https://www.googleapis.com/auth/spreadsheets",
+                ],
+        )
+        gc = pygsheets.authorize(custom_credentials= credentials)
+        sh = gc.open_by_key(spreadsheet_id)
+        worksheet = sh.worksheet(property= 'title', value= sheetname)
+        df = worksheet.get_as_df()
+        return df
+
+    # @st.cache
+    def convert_df(df):
+         # IMPORTANT: Cache the conversion to prevent computation on every rerun
+         return df.to_csv().encode('utf-8')
+    
     #--------------------------------------
     # Date object
     #---------------------------------------
@@ -76,15 +98,8 @@ def app():
     ## Cathie Wood's Portfolio
     Historic holdings for every Cathie's funds.
     """)
-    test_df = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSJ5B9E5p6MbKot2HBwAwkGGr_YxVJWgUdTgUVvamEtI6Vo2IdsqcjUq-MCdVoJD7dYpawtaHxgfSNO/pub?output=csv") 
-    st.dataframe(test_df)
-    
-#     df = make_df(spreadsheet_id, 'Daily ARK data').astype(str)
-#     st.write(df)
-
-    
     df = make_df(spreadsheet_id, 'Daily ARK data').astype(str)
-    st.dataframe(df)
+    st.write(df)
     
     st.download_button(
         label='Click to download CSV file', 
