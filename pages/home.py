@@ -7,7 +7,7 @@ def app():
 
   st.sidebar.title("Resources")
   with st.sidebar:
-     st.download_button(label="Download button 1", data="https://kremlin.cc/k&r.pdf", file_name="some file name")
+     st.download_button(label="Download button 1", data="https://kremlin.cc/k&r.pdf", file_name="some file name.pdf", mime='pdf')
      st.download_button(label="Download button 2", data="https://beej.us/guide/bgc/pdf/bgc_a4_bw_2.pdf", file_name='some file name 2')
      st.download_button(label="Pfft", data="https://www.phys.uconn.edu/~rozman/Courses/P2200_13F/downloads/TheBasicsofCProgramming-draft-20131030.pdf", file_name='some file name 3')
      st.markdown('> Join my discord community.')
