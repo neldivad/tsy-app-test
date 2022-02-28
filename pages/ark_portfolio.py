@@ -39,8 +39,8 @@ def app():
     col1, col2, col3 = st.columns([2, 3, 2])
     col2.image(image, use_column_width=True)
 
-    st_player("https://youtu.be/U3aXWizDbQ4")
-    st_player("https://soundcloud.com/imaginedragons/demons")
+    st.video("https://youtu.be/U3aXWizDbQ4")
+    st.audio("https://soundcloud.com/imaginedragons/demons")
     st.markdown('> My spotify')
     components.html("""
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7LhsgxH9e9ZvF9yxyEz0wR?utm_source=generator" width="100%" height="280" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
