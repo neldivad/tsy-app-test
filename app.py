@@ -25,11 +25,11 @@ with st.sidebar:
 # Create an instance of the app 
 app = MultiPage()
 
-st.title("Ticker Symbol You")
+st.title("TSY")
 st.subheader("C Lang Cheatsheet")
 # Add all your application here
-app.add_page("CHEAT SHEET", home.app)
-# app.add_page("KEYWORDS", keywords.app)
+app.add_page("Wassup", home.app)
+app.add_page("PR", pr.app)
 # app.add_page("ARRAYS", arrays.app)
 # app.add_page("POINTERS", pointers.app)
 # app.add_page("DATA STRUCTURES", data_structures.app)
