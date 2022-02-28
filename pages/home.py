@@ -326,4 +326,4 @@ data_type variable_name = arr[index]''')
     st.image("https://c.tenor.com/_DOBjnGspYAAAAAM/code-coding.gif", width=350)
   st.markdown('***')
   st.markdown(
-        "Thanks for visiting. I'd love feedback on this, so if you want to reach out you can find me on [Twitter] (https://twitter.com/madmax_ak), [GitHub] (https://github.com/madmax-ak), [LinkedIn] (https://www.linkedin.com/in/aadarsh-k/) or in Discord - MADMAX#4441")
+        "Insert Footer here")
