@@ -85,7 +85,7 @@ def app():
 #     st.write(df)
     @st.cache
     def make_df_i(spreadsheet_id, sheetname):
-        gc = pygsheets.authorize(service_account_file= 'gsheet-key.json')
+        gc = pygsheets.authorize(service_account_file= 'tsy-app-test/pages/gsheet-key.json')
         sh = gc.open_by_key(spreadsheet_id)
         worksheet = sh.worksheet(property= 'title', value= sheetname)
         df = worksheet.get_as_df()
