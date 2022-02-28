@@ -20,7 +20,7 @@ import requests
 from google.oauth2 import service_account
 import pygsheets
 
-from app_functions import derive_columns, derive_etf_columns, make_df_i, convert_df
+from app_functions import derive_columns, derive_etf_columns, make_df, convert_df
 
 def app():
     #--------------------------------------
@@ -71,7 +71,7 @@ def app():
     ## Cathie Wood's Portfolio
     Historic holdings for every Cathie's funds.
     """)
-    df = make_df_i(spreadsheet_id, 'Daily ARK data').astype(str)
+    df = make_df(spreadsheet_id, 'Daily ARK data').astype(str)
     st.write(df)
     st.download_button(
         label='Click to download CSV file', 
@@ -104,7 +104,7 @@ def app():
     from app_functions import create_ark_conviction_df, create_ark_etf_conviction_df
 
     st.subheader(f'ARK Invest Total Holdings for {current_time.strftime("%d-%m-%Y")}')
-    ark_daily = make_df_i(spreadsheet_id, 'Daily ARK data')
+    ark_daily = make_df(spreadsheet_id, 'Daily ARK data')
     convict = create_ark_conviction_df(ark_daily).reset_index()
     convict = derive_columns(convict)
     st.write(convict.astype(str))
