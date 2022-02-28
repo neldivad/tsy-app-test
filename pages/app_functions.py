@@ -18,7 +18,7 @@ def make_df_i(spreadsheet_id, sheetname):
     worksheet = sh.worksheet(property= 'title', value= sheetname)
     df = worksheet.get_as_df()
     return df
-    # Do not upload
+    # Do not upload 
 
 
 @st.cache
