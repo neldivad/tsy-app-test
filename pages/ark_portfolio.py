@@ -60,7 +60,7 @@ def app():
 
     spreadsheet_id = st.secrets['gsheet_id']
         # dnd
-
+    st.write(spreadsheet_id)
     #----------------
     # Title
     #---------------
