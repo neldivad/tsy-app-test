@@ -20,12 +20,11 @@ import requests
 from google.oauth2 import service_account
 import pygsheets
 
-from app_functions import derive_columns, derive_etf_columns 
-
 def app():
     #----------------------------------
     # Helper function (can't seem to import properly)
     #---------------------------------
+    from app_functions import derive_columns, derive_etf_columns 
     # @st.cache # cache seems to break the code
     def make_df(spreadsheet_id, sheetname):
         credentials = service_account.Credentials.from_service_account_info(
@@ -158,6 +157,7 @@ def app():
     col2, col3 = st.columns( (3, 2) )
     # Make share and market rank plot
     from app_functions import make_line_chart
+    
     mv_rank_fig = make_line_chart(
         selected_ticker, 
         'date', 'mv rank', 'ticker', 
