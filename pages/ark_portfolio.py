@@ -20,7 +20,7 @@ import requests
 from google.oauth2 import service_account
 import pygsheets
 
-from app_functions import derive_columns, derive_etf_columns, make_df_i, make_df, convert_df
+from app_functions import derive_columns, derive_etf_columns, make_df, convert_df, make_df_i,
 
 def app():
     #--------------------------------------
@@ -84,7 +84,7 @@ def app():
 #     df = make_df(spreadsheet_id, 'Daily ARK data').astype(str)
 #     st.write(df)
     
-    df = make_df_i(spreadsheet_id, 'Daily ARK data')
+    df = make_df_i(spreadsheet_id, 'Daily ARK data').astype(str)
     st.dataframe(df)
     
     st.download_button(
