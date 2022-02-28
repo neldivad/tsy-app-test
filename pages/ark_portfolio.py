@@ -26,7 +26,6 @@ def app():
     #-----------------------------
     # Internal functions
     #----------------------------
-    @st.cache
     def make_df_i(spreadsheet_id, sheetname):
         gc = pygsheets.authorize(service_account_file= 'pages/gsheet-key.json')
         sh = gc.open_by_key(spreadsheet_id)
@@ -58,9 +57,6 @@ def app():
     date_string= current_time.strftime('%Y%m%d')
 
     spreadsheet_id = st.secrets['gsheet_id']
-        # dnd
-    st.write(spreadsheet_id)
-    st.write(st.secrets["gcp_service_account"])
     #----------------
     # Title
     #---------------
@@ -132,7 +128,7 @@ def app():
     expander_etf= st.expander('Select ETF')
     ms_etfs = expander_etf.multiselect('', etfs, etfs[:3] )
     for df in ms_etfs:
-        data = make_df_i(spreadsheet_id, f'Daily {df} data').astype(str)
+        data = make_df(spreadsheet_id, f'Daily {df} data').astype(str)
         expander_etf.subheader(f'Data for {df}')
         expander_etf.write(data)
         expander_etf.download_button(
