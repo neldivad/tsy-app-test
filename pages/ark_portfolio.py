@@ -157,24 +157,24 @@ def app():
 
     col2, col3 = st.columns( (3, 2) )
     # Make share and market rank plot
-#     from app_functions import make_line_chart
-#     mv_rank_fig = make_line_chart(
-#         selected_ticker, 
-#         'date', 'mv rank', 'ticker', 
-#         'ARK Invest Portfolio Weighing Rank (market value)',
-#         xtitle= 'Date',
-#         ytitle= 'Portfolio Weigh Rank (market value)',
-#         ctitle= 'Ticker',
-#         yreverse= True,
-#         )
-#     sh_rank_fig = make_line_chart(
-#         selected_ticker, 
-#         'date', 'share rank', 'ticker', 
-#         'ARK Invest Portfolio Weighing Rank (No. shares)',
-#         xtitle= 'Date',
-#         ytitle= 'Portfolio Weigh Rank (share count)',
-#         ctitle= 'Ticker',
-#         yreverse= True,
-#         )
-#     col2.plotly_chart(mv_rank_fig)
-#     col2.plotly_chart(sh_rank_fig) 
+    from app_functions import make_line_chart
+    mv_rank_fig = make_line_chart(
+        selected_ticker, 
+        'date', 'mv rank', 'ticker', 
+        'ARK Invest Portfolio Weighing Rank (market value)',
+        xtitle= 'Date',
+        ytitle= 'Portfolio Weigh Rank (market value)',
+        ctitle= 'Ticker',
+        yreverse= True,
+        )
+    sh_rank_fig = make_line_chart(
+        selected_ticker, 
+        'date', 'share rank', 'ticker', 
+        'ARK Invest Portfolio Weighing Rank (No. shares)',
+        xtitle= 'Date',
+        ytitle= 'Portfolio Weigh Rank (share count)',
+        ctitle= 'Ticker',
+        yreverse= True,
+        )
+    col2.plotly_chart(mv_rank_fig)
+    col2.plotly_chart(sh_rank_fig) 
