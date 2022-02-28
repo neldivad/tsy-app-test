@@ -170,7 +170,7 @@ def make_line_chart(
     fig.update_yaxes(showline=True, linewidth=2, linecolor='#658e9c', gridcolor='#A2D3C2', zeroline= False,)
 
     fig.layout.images = [dict(
-        source="assets/tickersymbolyou-transparent.png",
+        source="https://raw.githubusercontent.com/neldivad/tsy-app-test/main/assets/tickersymbolyou-transparent.png",
         xref="paper", yref="paper",
         x=0.9, y=0.15,
         sizex=0.4, sizey=0.4,
