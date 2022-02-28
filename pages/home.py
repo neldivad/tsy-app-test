@@ -19,7 +19,7 @@ def app():
   st_player("https://youtu.be/U3aXWizDbQ4")
 
   with st.expander("Roadmap", expanded=True): 
-    st.image("asserts/TIMELINE.jpg")
+    st.image("assets/tickersymbolyou-transparent.png")
 
   col1, col2, col3 = st.columns([1,1,1])
   with col1:
