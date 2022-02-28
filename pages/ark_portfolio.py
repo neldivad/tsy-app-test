@@ -34,7 +34,6 @@ def app():
         df = worksheet.get_as_df()
         return df
     
-    @st.cache
     def make_df(spreadsheet_id, sheetname):
         credentials = service_account.Credentials.from_service_account_info(
             st.secrets["gcp_service_account"],
