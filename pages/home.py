@@ -15,8 +15,8 @@ def app():
     """<iframe src="https://discord.com/widget?id=749377367482433677&theme=dark" width="280" height="380" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>""",
     height=400,)
 
-  st.caption("Revise on the go")
-  st_player("https://youtu.be/U3aXWizDbQ4")
+  st.subheader("Popular uploads")
+  st_player("https://www.youtube.com/watch?v=0G1b4gOsrRE&t=4s")
 
 #   with st.expander("Roadmap", expanded=True): 
 #     st.image("assets/tickersymbolyou-transparent.png")
