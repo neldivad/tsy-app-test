@@ -41,7 +41,7 @@ def app():
 
     st.video("https://youtu.be/U3aXWizDbQ4")
     components.html("""
-    <iframe style="border-radius:12px" src='https://soundcloud.com/divadlen/othello?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing' width="100%" height="280" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/884456854&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/divadlen" title="Nel D." target="_blank" style="color: #cccccc; text-decoration: none;">Nel D.</a> · <a href="https://soundcloud.com/divadlen/othello-piano" title="Othello (piano)" target="_blank" style="color: #cccccc; text-decoration: none;">Othello (piano)</a></div>
     """, height=300)
     st.markdown('> My spotify')
     components.html("""
