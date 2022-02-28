@@ -21,7 +21,7 @@ from google.oauth2 import service_account
 import pygsheets
 
 ################################
-# Dataframe uploads and downloads
+# Helper functions unable to import from different file
 ################################
 # @st.cache # cache seems to break the code
 def make_df(spreadsheet_id, sheetname):
@@ -121,6 +121,7 @@ def derive_etf_columns(df):
 ########################
 #
 #######################
+@st.cache
 def make_line_chart(
     df, xdata, ydata, cdata, 
     title, height=600, width=800, 
@@ -191,7 +192,7 @@ def make_line_chart(
       )]
     return fig
 
-
+@st.cache
 def make_corr_map(data, title, zmin=-1, zmax=1, height=600, width= 800):
     """
     data: Your dataframe.
@@ -234,6 +235,9 @@ def make_corr_map(data, title, zmin=-1, zmax=1, height=600, width= 800):
     fig=go.Figure(data=[heat], layout=layout)
     return fig 
 
+######################################
+# Finaly, app building time
+######################################
 def app():
     #----------------------------------
     # Helper function (can't seem to import properly)
