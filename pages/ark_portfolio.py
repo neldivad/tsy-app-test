@@ -20,7 +20,7 @@ import requests
 from google.oauth2 import service_account
 import pygsheets
 
-from app_functions import derive_columns, derive_etf_columns, make_df, convert_df
+from app_functions import derive_columns, derive_etf_columns, make_df_i, make_df, convert_df
 
 def app():
     #--------------------------------------
@@ -84,7 +84,7 @@ def app():
 #     df = make_df(spreadsheet_id, 'Daily ARK data').astype(str)
 #     st.write(df)
     
-    df = make_df(spreadsheet_id, 'Daily ARK data')
+    df = make_df_i(spreadsheet_id, 'Daily ARK data')
     st.dataframe(df)
     
     st.download_button(
@@ -102,7 +102,7 @@ def app():
     expander_etf= st.expander('Select ETF')
     ms_etfs = expander_etf.multiselect('', etfs, etfs[:3] )
     for df in ms_etfs:
-        data = make_df(spreadsheet_id, f'Daily {df} data').astype(str)
+        data = make_df_i(spreadsheet_id, f'Daily {df} data').astype(str)
         expander_etf.subheader(f'Data for {df}')
         expander_etf.write(data)
         expander_etf.download_button(
