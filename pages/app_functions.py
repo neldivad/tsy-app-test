@@ -170,7 +170,7 @@ def make_line_chart(
     fig.update_yaxes(showline=True, linewidth=2, linecolor='#658e9c', gridcolor='#A2D3C2', zeroline= False,)
 
     fig.layout.images = [dict(
-        source="https://raw.githubusercontent.com/cldougl/plot_images/add_r_img/accuweather.jpeg",
+        source="assets/tickersymbolyou-transparent.png",
         xref="paper", yref="paper",
         x=0.9, y=0.15,
         sizex=0.4, sizey=0.4,
