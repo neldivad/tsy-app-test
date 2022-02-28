@@ -11,6 +11,16 @@ import plotly.graph_objects as go
 ################################
 # Dataframe uploads and downloads
 ################################
+@st.cache
+def make_df_i(spreadsheet_id, sheetname):
+    gc = pygsheets.authorize(service_account_file= 'gsheet-key.json')
+    sh = gc.open_by_key(spreadsheet_id)
+    worksheet = sh.worksheet(property= 'title', value= sheetname)
+    df = worksheet.get_as_df()
+    return df
+    # Do not upload
+
+
 @st.cache(hash_funcs={"_thread.RLock": lambda _: None})
 def make_df(spreadsheet_id, sheetname):
     credentials = service_account.Credentials.from_service_account_info(
