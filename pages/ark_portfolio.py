@@ -177,4 +177,4 @@ def app():
         yreverse= True,
         )
     col2.plotly_chart(mv_rank_fig)
-    col2.plotly_chart(sh_rank_fig)
+    col2.plotly_chart(sh_rank_fig) 
