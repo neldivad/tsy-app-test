@@ -1,6 +1,5 @@
 import streamlit as st
 from streamlit_player import st_player
-import streamlit.components.v1 as components
 import pandas as pd
 
 def app():
