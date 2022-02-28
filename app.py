@@ -15,18 +15,16 @@ st.set_page_config(
 
 st.sidebar.text("> Pre-Alpha version 1.1.1")
 with st.sidebar:
-     components.html(
-    """<a class="github-button" href="https://github.com/madmax-ak/Clang-cheatsheet" data-color-scheme="no-preference: dark_high_contrast; light: dark_high_contrast; dark: dark_high_contrast;" data-icon="octicon-star" aria-label="Star madmax-ak/Clang-cheatsheet on GitHub">Star</a>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<a href="https://twitter.com/madmax_ak?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false">Follow @madmax_ak</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-""",
-    height=30,)
+     components.html("""
+     <a href="https://twitter.com/just_neldivad" class="twitter-follow-button" data-show-screen-name="true" data-show-count="true">Follow @just_neldivad</a>
+     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+     """, height=30,)
     
 # Create an instance of the app 
 app = MultiPage()
 
 st.title("TSY")
-st.subheader("C Lang Cheatsheet")
+st.subheader("Random text here so I know where I put it")
 # Add all your application here
 app.add_page("Wassup", home.app)
 app.add_page("PR", pr.app)
