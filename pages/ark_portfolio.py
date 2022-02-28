@@ -40,7 +40,9 @@ def app():
     col2.image(image, use_column_width=True)
 
     st.video("https://youtu.be/U3aXWizDbQ4")
-    st.audio("https://soundcloud.com/imaginedragons/demons")
+    components.html("""
+    <iframe style="border-radius:12px" src='https://soundcloud.com/divadlen/othello?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing' width="100%" height="280" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    """, height=300)
     st.markdown('> My spotify')
     components.html("""
     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7LhsgxH9e9ZvF9yxyEz0wR?utm_source=generator" width="100%" height="280" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
