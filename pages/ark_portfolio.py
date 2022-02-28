@@ -35,7 +35,7 @@ def app():
     #----------------
     # Title
     #---------------
-    image = Image.open('img/tickersymbolyou-transparent.png')
+    image = Image.open('assets/tickersymbolyou-transparent.png')
     col1, col2, col3 = st.columns([2, 3, 2])
     col2.image(image, use_column_width=True)
 
