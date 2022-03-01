@@ -125,7 +125,7 @@ def calcular_correlacoes():
 #                                   xTitle='Data', yTitle='Correlação %',
 #                                   title='Correlação no Tempo entre os Ativos e ' + indice)
       ugly_fix = correlacao_tempo.reset_index()
-      fig = px.line(ugly_fix, x= 'index', y= ugly_fix.iloc[1])
+      fig = px.line(ugly_fix, x= 'index', y= ugly_fix.columns[1])
     
       st.write(fig)
 
