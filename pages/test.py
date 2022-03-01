@@ -24,6 +24,7 @@ def app():
     ## Cathie Wood's Portfolio
     Historic holdings for every Cathie's funds.
     """)
+    spreadsheet_id = st.secrets['gsheet_id']
     df = make_df(spreadsheet_id, 'Daily ARK data').astype(str)
     st.write(df)
     
