@@ -8,7 +8,6 @@ import math
 
 def puxar_tabela_papeis():
     return pd.read_csv('assets/init_tickers.csv')
-
 st.session_state.tabela_papeis = puxar_tabela_papeis()
 
 def correlacao():
@@ -125,8 +124,10 @@ def calcular_correlacoes():
       correlacao_tempo.dropna(inplace=True)
       correlacao_tempo.drop(columns=['IBOV','SP500','Dolar'], inplace=True)
       #st.write(correlacao_tempo)
-      fig = correlacao_tempo.iplot(asFigure=True, xTitle='Data', yTitle='Correlação %',
-                                   title='Correlação no Tempo entre os Ativos e ' + indice)
+#       fig = correlacao_tempo.iplot(asFigure=True, xTitle='Data', yTitle='Correlação %',
+#                                    title='Correlação no Tempo entre os Ativos e ' + indice)
+      fig = px.Scatter(correlacao_tempo, x= 'Data', y= 'Correlação %')
+    
       st.plotly_chart(fig)
 
 def app():
