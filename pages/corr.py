@@ -8,7 +8,7 @@ import math
 
 @st.cache
 def puxar_tabela_papeis():
-    return pd.read_csv('../assets/init_tickers.csv')
+    return pd.read_csv('assets/init_tickers.csv')
 st.session_state.tabela_papeis = puxar_tabela_papeis()
 
 def correlacao():
