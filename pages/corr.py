@@ -151,11 +151,53 @@ def calculate_correlation():
       corr_temp.dropna(inplace=True)
       corr_temp.drop(columns=['IBOV','SP500','Dollar'], inplace=True)
       
+      st.write(ticker_returns) #
       st.write(corr_temp)
+      
+      def make_corr_ts_plot(wide_df):
+        fig = px.line(wide_df, 
+                      x= wide_df.index, 
+                      y= wide_df.columns)
+        fig.update_layout(
+          title={
+            'text': f'Time-series correlation for assets against {indice}',
+            'y':1,
+            'x':0.5,
+            'xanchor': 'center',
+            'yanchor': 'top',
+            'font': dict(size=20)
+            },
+          xaxis=dict(
+            showline=True,
+            linecolor='rgb(204, 204, 204)',
+            linewidth=2,
+            ticks='outside',
+            tickfont=dict(
+                family='Arial',
+                size=12,
+                color='rgb(82, 82, 82)',
+            ),
+          ),
+          yaxis=dict(
+              title= f'{wide_df.index}'
+          ),
 
-      wide_df = corr_temp
-      fig = px.line(wide_df, x= wide_df.index, y= wide_df.columns)
-    
+          plot_bgcolor='#F1F8F6',
+        )
+        fig.update_xaxes(showline=True, linewidth=2, linecolor='#658e9c', gridcolor='#A2D3C2')
+        fig.update_yaxes(showline=True, linewidth=2, linecolor='#658e9c', gridcolor='#A2D3C2', zeroline= False,)
+
+        fig.layout.images = [dict(
+          source="https://raw.githubusercontent.com/neldivad/tsy-app-test/main/assets/tickersymbolyou-transparent.png",
+          xref="paper", yref="paper",
+          x=0.92, y=0.03,
+          sizex=0.2, sizey=0.2,
+          xanchor="center", yanchor="bottom",
+          layer= "below",
+        )]
+        return fig
+      
+      fig = make_corr_ts_plot( corr_temp  )
       st.write(fig)
 
 def app():
