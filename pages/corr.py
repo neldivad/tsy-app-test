@@ -181,7 +181,7 @@ def calculate_correlation():
           yaxis=dict(
               title= f'Correlation (%)'
           ),
-          legend_title= 'Assets'
+          legend_title= 'Assets',
           plot_bgcolor='#F1F8F6',
         )
         fig.update_xaxes(showline=True, linewidth=2, linecolor='#658e9c', gridcolor='#A2D3C2')
