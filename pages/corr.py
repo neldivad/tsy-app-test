@@ -141,4 +141,5 @@ def calcular_correlacoes():
 
 def app():
   st.write('Hey hey heeeeeeeeeeeeeeeeeeeeey')
+  st.write( st.session_state['asset_correlation'] )
   correlacao()
