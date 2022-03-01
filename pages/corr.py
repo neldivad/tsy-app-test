@@ -6,7 +6,7 @@ import yfinance as yf
 import plotly.express as px
 import math
 
-def correlacao():
+def correlation_analysis():
   st.header('Correlation Analysis')
   st.session_state.datatable = pd.read_csv('assets/init_tickers.csv')
   with st.form(key= 'asset_correlation'):
@@ -16,43 +16,46 @@ def correlacao():
         st.error('At least 1 asset is required to be selected.')
 
   if len(st.session_state.tickers_sel) != 0:
-    calcular_correlacoes()
+    calculate_correlation()
 
 def fix_col_names(df): # Function to remove the .SA or correct the symbols (??)
   return ['IBOV' if col =='^BVSP' else col.rstrip('.SA') for col in df.columns]
 
-def calcular_correlacoes():
+def calculate_correlation():
   with st.expander("Correlation between assets and indices", expanded=True):
     if st.checkbox('Correlation', help='Calculate correlation between asset and indices', value=True):
       tickers = [item + '.SA' for item in st.session_state.tickers_sel] # Add .SA suffix to tickers
       tickers += ['^BVSP','^GSPC', 'USDBRL=X']
-      #st.session_state.tickers_corr = st.session_state.tickers_sel + ['^BVSP', 'USDBRL=X'] # Adiciona os Indices para comparação
 
       col1, col2 = st.columns(2)
       with col1:
-        periodo = st.selectbox('Select period:',['1 year', '6 months', '3 mmonths'])
-        if periodo == '1 year': periodo='1y'
-        if periodo == '6 months': periodo = '6mo'
-        if periodo == '3 months': periodo = '3mo'
-      retornos = yf.download(tickers, period=periodo, progress=False)["Adj Close"].pct_change()
-      retornos = retornos.rename(columns={'^BVSP': 'IBOV','^GSPC': 'SP500', 'USDBRL=X': 'Dollar'}) # Renomeia as Colunas
-      retornos = retornos.fillna(method='bfill')
-      retornos = retornos[1:] # Remove header
-      retornos.columns = fix_col_names(retornos) 
+        time_period = st.selectbox('Select period:',['1 year', '6 months', '3 mmonths'])
+        if time_period == '1 year': time_period='1y'
+        if time_period == '6 months': time_period = '6mo'
+        if time_period == '3 months': time_period = '3mo'
+      ticker_returns = yf.download(tickers, period=time_period, progress=False)["Adj Close"].pct_change()
+      ticker_returns = ticker_returns.rename(columns={'^BVSP': 'IBOV','^GSPC': 'SP500', 'USDBRL=X': 'Dollar'})
+      ticker_returns = ticker_returns.fillna(method='bfill')
       
-      correlacao_full = retornos.corr() # Correlation object
-      correlacao = correlacao_full.drop('IBOV',1) # Create table removing the Indexes (Separate two comparisons)
-      correlacao = correlacao.drop('IBOV',0)
-      correlacao = correlacao.drop('Dollar',1)
-      correlacao = correlacao.drop('Dollar',0)
-      correlacao = correlacao.drop('SP500',1)
-      correlacao = correlacao.drop('SP500',0)
+      #from copy import deepcopy #
+      check_df = ticker_returns.deepcopy()
+      
+      ticker_returns = ticker_returns[1:] # Remove header
+      ticker_returns.columns = fix_col_names(ticker_returns) 
+      
+      corr_full = ticker_returns.corr() # Correlation object
+      corr_table = corr_full.drop('IBOV',1) # Create table removing the Indexes (Separate two comparisons)
+      corr_table = corr_table.drop('IBOV',0)
+      corr_table = corr_table.drop('Dollar',1)
+      corr_table = corr_table.drop('Dollar',0)
+      corr_table = corr_table.drop('SP500',1)
+      corr_table = corr_table.drop('SP500',0)
 
       if len(st.session_state.tickers_sel)== 1: # If you have only 1 asset, show only the correlation between it and the Indices
         st.write('**Correlation of assets with IBOV, SP500 and Dollar**')
-        corr_table_indices = pd.DataFrame(correlacao_full['IBOV'])
-        corr_table_indices['SP500'] = correlacao_full['SP500']
-        corr_table_indices['Dollar'] = correlacao_full['Dollar']
+        corr_table_indices = pd.DataFrame(corr_full['IBOV'])
+        corr_table_indices['SP500'] = corr_full['SP500']
+        corr_table_indices['Dollar'] = corr_full['Dollar']
         corr_table_indices = corr_table_indices.drop('IBOV',0)
         corr_table_indices = corr_table_indices.drop('SP500', 0)
         corr_table_indices = corr_table_indices.drop('Dollar',0)
@@ -60,9 +63,13 @@ def calcular_correlacoes():
         
         st.table(corr_table_indices)
         st.dataframe(corr_table_indices, width=800, height=400)
-        st.write(retornos) #
-        st.write(correlacao_full)#
-        st.write(correlacao)#
+        
+        st.write(tickers) #
+        st.write(check_df) #
+        st.write(ticker_returns) #
+        st.write(ticker_returns) #
+        st.write(corr_full) #
+        st.write(corr_table) #
 
 
       else: # If you have more than 1 asset, show the correlation between them and between the indices
@@ -71,11 +78,11 @@ def calcular_correlacoes():
         with col1:
           st.write('**Correlation between Assets**')
           
-          correlacao['Asset 1'] = correlacao.index
-          correlacao = correlacao.melt(id_vars='Asset 1', var_name="Asset 2", value_name='Correlation').reset_index(drop=True)
-          correlacao = correlacao[ correlacao['Asset 1'] < correlacao['Asset 2'] ].dropna()
+          corr_table['Asset 1'] = corr_table.index
+          corr_table = corr_table.melt(id_vars='Asset 1', var_name="Asset 2", value_name='Correlation').reset_index(drop=True)
+          corr_table = corr_table[ corr_table['Asset 1'] < corr_table['Asset 2'] ].dropna()
           
-          highest_corr = correlacao.sort_values("Correlation", ascending=False)
+          highest_corr = corr_table.sort_values("Correlation", ascending=False)
           highest_corr.reset_index(drop=True, inplace=True)
           highest_corr.index += 1  # Start index at 1 instead of 0 (why?)
 
@@ -89,52 +96,51 @@ def calcular_correlacoes():
 
           st.table(highest_corr)
           st.dataframe(highest_corr, height=600)
-          st.write(correlacao)#
+          st.write(corr_table)#
 
         with col3:
           st.write('**Correlation of Assets with IBOV, SP500 and Dollar**')
-          corr_table_indices = pd.DataFrame(correlacao_full['IBOV'])
-          corr_table_indices['SP500'] = correlacao_full['SP500']
-          corr_table_indices['Dollar'] = correlacao_full['Dollar']
+          corr_table_indices = pd.DataFrame(corr_full['IBOV'])
+          corr_table_indices['SP500'] = corr_full['SP500']
+          corr_table_indices['Dollar'] = corr_full['Dollar']
           
           corr_table_indices = corr_table_indices.drop('IBOV',0)
           corr_table_indices = corr_table_indices.drop('SP500', 0)
           corr_table_indices = corr_table_indices.drop('Dollar',0)
 
-          ordenar = st.selectbox('Sort by', ['IBOV','SP500', 'Dollar'])
-          if ordenar == 'IBOV':
+          order = st.selectbox('Sort by', ['IBOV','SP500', 'Dollar'])
+          if order == 'IBOV':
             corr_table_indices = corr_table_indices.sort_values("IBOV",ascending = False)
             corr_table_indices = corr_table_indices.style.background_gradient(cmap="Oranges").format({"IBOV": "{:.0%}","SP500": "{:.0%}", "Dollar": "{:.0%}"})
             st.table(corr_table_indices)
-            #st.dataframe(corr_table_indices,width=800,height=400)
-          if ordenar == 'SP500':
+            
+          if order == 'SP500':
             corr_table_indices = corr_table_indices.sort_values("SP500",ascending = False)
             corr_table_indices = corr_table_indices.style.background_gradient(cmap="Oranges").format({"IBOV": "{:.0%}","SP500": "{:.0%}", "Dollar": "{:.0%}"})
             st.table(corr_table_indices)
-            #st.dataframe(corr_table_indices, height=400)
-          if ordenar == 'Dollar':
+
+          if order == 'Dollar':
             corr_table_indices = corr_table_indices.sort_values("Dollar",ascending = False)
             corr_table_indices = corr_table_indices.style.background_gradient(cmap="Oranges").format({"IBOV": "{:.0%}","SP500": "{:.0%}", "Dollar": "{:.0%}"})
             st.table(corr_table_indices)
-            #st.dataframe(corr_table_indices, height=400)
 
   with st.expander("Time Series Correlation Chart", expanded=True):
     if st.checkbox('Correlation over time', help='Show the correlation in time in relation to the Indices'):
-      retornos = yf.download(tickers, period='10y', progress=False)["Adj Close"].pct_change()
-      retornos = retornos.rename(columns={'^BVSP': 'IBOV','^GSPC': 'SP500', 'USDBRL=X': 'Dollar'}) 
-      retornos = retornos.fillna(method='bfill')
-      #retornos = retornos[1:] # Apagar primeira linha
-      retornos.columns = fix_col_names(retornos) # Corrigir as colunas
+      ticker_returns = yf.download(tickers, period='10y', progress=False)["Adj Close"].pct_change()
+      ticker_returns = ticker_returns.rename(columns={'^BVSP': 'IBOV','^GSPC': 'SP500', 'USDBRL=X': 'Dollar'}) 
+      ticker_returns = ticker_returns.fillna(method='bfill')
+      
+      ticker_returns.columns = fix_col_names(ticker_returns) 
       
       indice = st.radio('Indices:',['IBOV', 'SP500', 'Dollar'])
       
-      correlacao_tempo = pd.DataFrame(retornos.rolling(252).corr(retornos[indice]) * 100)
-      correlacao_tempo.dropna(inplace=True)
-      correlacao_tempo.drop(columns=['IBOV','SP500','Dollar'], inplace=True)
+      corr_temp = pd.DataFrame(ticker_returns.rolling(252).corr(ticker_returns[indice]) * 100)
+      corr_temp.dropna(inplace=True)
+      corr_temp.drop(columns=['IBOV','SP500','Dollar'], inplace=True)
       
-      st.write(correlacao_tempo)
+      st.write(corr_temp)
 
-      wide_df = correlacao_tempo
+      wide_df = corr_temp
       fig = px.line(wide_df, x= wide_df.index, y= wide_df.columns)
     
       st.write(fig)
@@ -142,5 +148,5 @@ def calcular_correlacoes():
 def app():
   st.write('Hey hey heeeeeeeeeeeeeeeeeeeeey')
 
-  correlacao()
+  correlation_analysis()
   st.write( st.session_state )
