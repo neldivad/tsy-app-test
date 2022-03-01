@@ -4,7 +4,6 @@ streamlit_player
 sklearn
 plotly
 matplotlib
-cufflinks
 
 google
 pygsheets
