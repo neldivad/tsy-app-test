@@ -126,3 +126,4 @@ def calcular_correlacoes():
 
 def app():
   st.write('Hey hey heeeeeeeeeeeeeeeeeeeeey')
+  correlacao()
