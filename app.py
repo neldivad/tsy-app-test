@@ -4,7 +4,7 @@ from streamlit_player import st_player
 
 # Custom imports 
 from multipage import MultiPage
-from pages import home, pr, ark_portfolio
+from pages import home, pr, ark_portfolio, test
 
 st.set_page_config(
      page_title="Ticker Symbol YOU | Channel that invests in you",
