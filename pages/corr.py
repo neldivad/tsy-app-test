@@ -37,8 +37,8 @@ def calculate_correlation():
       ticker_returns = ticker_returns.rename(columns={'^BVSP': 'IBOV','^GSPC': 'SP500', 'USDBRL=X': 'Dollar'})
       ticker_returns = ticker_returns.fillna(method='bfill')
       
-      #from copy import deepcopy #
-      check_df = ticker_returns.deepcopy()
+      from copy import deepcopy #
+      check_df = deepcopy( ticker_returns )
       
       ticker_returns = ticker_returns[1:] # Remove header
       ticker_returns.columns = fix_col_names(ticker_returns) 
