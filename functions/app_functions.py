@@ -172,8 +172,8 @@ def make_line_chart(
     fig.layout.images = [dict(
         source="https://raw.githubusercontent.com/neldivad/tsy-app-test/main/assets/tickersymbolyou-transparent.png",
         xref="paper", yref="paper",
-        x=0.9, y=0.15,
-        sizex=0.4, sizey=0.4,
+        x=1.1, y=0.05,
+        sizex=0.2, sizey=0.2,
         xanchor="center", yanchor="bottom",
         layer= "below",
       )]
