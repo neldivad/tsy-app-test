@@ -1,6 +1,9 @@
 streamlit
 streamlit_player
+
 sklearn
 plotly
+
 google
 pygsheets
+yfinance
