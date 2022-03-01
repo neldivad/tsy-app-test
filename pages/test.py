@@ -1,6 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
-import app_functions
+from  functions.app_functions import make_df
 
 from PIL import Image
 
@@ -24,7 +24,7 @@ def app():
     ## Cathie Wood's Portfolio
     Historic holdings for every Cathie's funds.
     """)
-    df = app_functions.make_df(spreadsheet_id, 'Daily ARK data').astype(str)
+    df = make_df(spreadsheet_id, 'Daily ARK data').astype(str)
     st.write(df)
     
     from app_functions2 import convert_df
