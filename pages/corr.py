@@ -120,13 +120,12 @@ def calcular_correlacoes():
       correlacao_tempo = pd.DataFrame(retornos.rolling(252).corr(retornos[indice]) * 100)
       correlacao_tempo.dropna(inplace=True)
       correlacao_tempo.drop(columns=['IBOV','SP500','Dolar'], inplace=True)
-      #st.write(correlacao_tempo)
-#       fig = correlacao_tempo.iplot(asFigure=True, xTitle='Data', yTitle='Correlação %',
-#                                    title='Correlação no Tempo entre os Ativos e ' + indice)
       st.write(correlacao_tempo)
-      fig = px.line(correlacao_tempo, x= 'Data', y= 'Correlação %')
+      fig = correlacao_tempo.plot(asFigure=True, xTitle='Data', yTitle='Correlação %',
+                                   title='Correlação no Tempo entre os Ativos e ' + indice)
+      # fig = px.line(correlacao_tempo, x= 'Data', y= 'Correlação %')
     
-      st.plotly_chart(fig)
+      st.write(fig)
 
 def app():
   st.write('Hey hey heeeeeeeeeeeeeeeeeeeeey')
