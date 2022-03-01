@@ -6,12 +6,9 @@ import yfinance as yf
 import plotly.express as px
 import math
 
-def puxar_tabela_papeis():
-    return pd.read_csv('assets/init_tickers.csv')
-st.session_state.tabela_papeis = puxar_tabela_papeis()
-
 def correlacao():
   st.header('Análise de Correlação')
+  st.session_state.tabela_papeis = pd.read_csv('assets/init_tickers.csv')
   with st.form(key='Correlacao_Inserir_Ativos'):
     st.session_state.tickers_sel = st.multiselect('Insira os Ativos para analisar as correlações',st.session_state.tabela_papeis['Ticker'])
     if st.form_submit_button(label='Analisar Correlações'): 
