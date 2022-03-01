@@ -9,7 +9,7 @@ import math
 def correlacao():
   st.header('Correlation Analysis')
   st.session_state.datatable = pd.read_csv('assets/init_tickers.csv')
-  with st.form(key= 'Correlacao_Inserir_Ativos'):
+  with st.form(key= 'asset_correlation'):
     st.session_state.tickers_sel = st.multiselect('Assets to analyze:',st.session_state.datatable['Ticker'])
     if st.form_submit_button(label='Analyze correlation'): 
       if len(st.session_state.tickers_sel) == 0:
