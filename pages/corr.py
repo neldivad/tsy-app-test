@@ -123,7 +123,7 @@ def calcular_correlacoes():
       #st.write(correlacao_tempo)
 #       fig = correlacao_tempo.iplot(asFigure=True, xTitle='Data', yTitle='Correlação %',
 #                                    title='Correlação no Tempo entre os Ativos e ' + indice)
-      fig = px.Scatter(correlacao_tempo, x= 'Data', y= 'Correlação %')
+      fig = px.scatter(correlacao_tempo, x= 'Data', y= 'Correlação %')
     
       st.plotly_chart(fig)
 
