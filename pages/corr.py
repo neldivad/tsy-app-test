@@ -40,7 +40,7 @@ def calculate_correlation():
       from copy import deepcopy #
       check_df = deepcopy( ticker_returns )
       
-      ticker_returns = ticker_returns[1:] # Remove header
+      ticker_returns = ticker_returns[1:] # Remove first row
       ticker_returns.columns = fix_col_names(ticker_returns) 
       
       corr_full = ticker_returns.corr() # Correlation object
@@ -64,11 +64,15 @@ def calculate_correlation():
         st.table(corr_table_indices)
         st.dataframe(corr_table_indices, width=800, height=400)
         
+        st.subheader('Dataframe for `tickers`') #
         st.write(tickers) #
+        st.subheader('Dataframe for `tickers returns` before removing first row and name fix') #
         st.write(check_df) #
+        st.subheader('Dataframe for `tickers returns` after removing first row and name fix') #
         st.write(ticker_returns) #
-        st.write(ticker_returns) #
+        st.subheader('Full corr object') #
         st.write(corr_full) #
+        st.subheader('Corr object with indices sliced') #
         st.write(corr_table) #
 
 
@@ -91,12 +95,21 @@ def calculate_correlation():
             # return 'color: %s' % color
             return 'background-color: %s' % color
 
-          # highest_corr = highest_corr.style.applymap(_color_red_or_green, subset=['Correlação']).format({"Correlação": "{:.0%}"}) # Aplicar Cores
           highest_corr = highest_corr.style.background_gradient(cmap="Oranges").format({"Correlation": "{:.0%}"})
 
           st.table(highest_corr)
-          st.dataframe(highest_corr, height=600)
-          st.write(corr_table)#
+          st.dataframe(highest_corr, height=600) 
+          
+          st.subheader('Dataframe for `tickers`') #
+          st.write(tickers) #
+          st.subheader('Dataframe for `tickers returns` before removing first row and name fix') #
+          st.write(check_df) #
+          st.subheader('Dataframe for `tickers returns` after removing first row and name fix') #
+          st.write(ticker_returns) #
+          st.subheader('Full corr object') #
+          st.write(corr_full) #
+          st.subheader('Corr object with indices sliced') #
+          st.write(corr_table) #
 
         with col3:
           st.write('**Correlation of Assets with IBOV, SP500 and Dollar**')
