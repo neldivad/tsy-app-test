@@ -179,7 +179,7 @@ def calculate_correlation():
             ),
           ),
           yaxis=dict(
-              title= f'{wide_df.index}'
+              title= f'Correlation (%)'
           ),
 
           plot_bgcolor='#F1F8F6',
