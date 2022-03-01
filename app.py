@@ -29,7 +29,7 @@ st.subheader("Random text here so I know where I put it")
 app.add_page("Wassup", home.app)
 app.add_page("PR", pr.app)
 app.add_page("ARK Invest Portfolio", ark_portfolio.app)
-# app.add_page("POINTERS", pointers.app)
+app.add_page("Test imports", test_app_functions.app)
 # app.add_page("DATA STRUCTURES", data_structures.app)
 # app.add_page("PROBLEMS", problems.app)
 
