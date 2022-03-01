@@ -121,10 +121,11 @@ def calcular_correlacoes():
       correlacao_tempo.dropna(inplace=True)
       correlacao_tempo.drop(columns=['IBOV','SP500','Dolar'], inplace=True)
       st.write(correlacao_tempo)
-      fig = correlacao_tempo.iplot(asFigure=True, 
-                                  xTitle='Data', yTitle='Correlação %',
-                                  title='Correlação no Tempo entre os Ativos e ' + indice)
-      # fig = px.line(correlacao_tempo, x= 'Data', y= 'Correlação %')
+#       fig = correlacao_tempo.iplot(asFigure=True, 
+#                                   xTitle='Data', yTitle='Correlação %',
+#                                   title='Correlação no Tempo entre os Ativos e ' + indice)
+      ugly_fix = correlacao_tempo.reset_index()
+      fig = px.line(ugly_fix, x= 'index', y= ugly_fix.iloc[1])
     
       st.write(fig)
 
