@@ -1,0 +1,619 @@
+Ticker,Setor,SubSetor
+A1MD34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+AALR3,Saúde,Análises e Diagnósticos
+AAPL34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+ABCB4,Financeiro,Intermediários Financeiros
+ABEV3,Consumo não Cíclico,Bebidas
+ACWI11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+ADBE34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+AERI3,Bens Industriais,Máquinas e Equipamentos
+AESB3,Utilidade Pública,Energia Elétrica
+AFLT3,Utilidade Pública,Energia Elétrica
+AGRO3,Consumo não Cíclico,Agropecuária
+AGXY3,Consumo não Cíclico,Agropecuária
+AHEB3,Consumo Cíclico,Viagens e Lazer
+AHEB5,Consumo Cíclico,Viagens e Lazer
+AHEB6,Consumo Cíclico,Viagens e Lazer
+AIRB34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+ALLD3,Consumo Cíclico,Comércio
+ALPA3,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+ALPA4,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+ALPK3,Bens Industriais,Serviços Diversos
+ALSO3,Financeiro,Exploração de Imóveis
+ALUP11,Utilidade Pública,Energia Elétrica
+ALUP3,Utilidade Pública,Energia Elétrica
+ALUP4,Utilidade Pública,Energia Elétrica
+AMAR3,Consumo Cíclico,Comércio
+AMBP3,Bens Industriais,Serviços Diversos
+AMER3,Consumo Cíclico,Comércio
+AMZO34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+ANIM3,Consumo Cíclico,Diversos
+APER3,Financeiro,Previdência e Seguros
+ARML3,Bens Industriais,Máquinas e Equipamentos
+ARZZ3,Consumo Cíclico,Comércio
+ASAI3,Consumo não Cíclico,Comércio e Distribuição
+ATMP3,Bens Industriais,Serviços Diversos
+ATOM3,Outros,Outros
+AURA33,Materiais Básicos,Mineração
+AVLL3,Consumo Cíclico,Construção Civil
+AZEV3,Bens Industriais,Construção e Engenharia
+AZEV4,Bens Industriais,Construção e Engenharia
+AZUL4,Bens Industriais,Transporte
+B1NT34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+B3SA3,Financeiro,Serviços Financeiros Diversos
+BABA34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BACW39,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BAHI3,Consumo Cíclico,Diversos
+BALM3,Saúde,Equipamentos
+BALM4,Saúde,Equipamentos
+BARI11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BAUH4,Consumo não Cíclico,Alimentos Processados
+BAZA3,Financeiro,Intermediários Financeiros
+BBAS3,Financeiro,Intermediários Financeiros
+BBDC3,Financeiro,Intermediários Financeiros
+BBDC4,Financeiro,Intermediários Financeiros
+BBOV11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BBPO11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BBRK3,Financeiro,Exploração de Imóveis
+BBSE3,Financeiro,Previdência e Seguros
+BCFF11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BCRI11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BDLL3,Bens Industriais,Máquinas e Equipamentos
+BDLL4,Bens Industriais,Máquinas e Equipamentos
+BEEF3,Consumo não Cíclico,Alimentos Processados
+BEES3,Financeiro,Intermediários Financeiros
+BEES4,Financeiro,Intermediários Financeiros
+BEGU39,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BERK34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BGIP3,Financeiro,Intermediários Financeiros
+BGIP4,Financeiro,Intermediários Financeiros
+BIDI11,Financeiro,Intermediários Financeiros
+BIDI3,Financeiro,Intermediários Financeiros
+BIDI4,Financeiro,Intermediários Financeiros
+BIEU39,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BIOM3,Saúde,Medicamentos e Outros Produtos
+BITH11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BKBR3,Consumo Cíclico,Hoteis e Restaurantes
+BKNG34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BLAU3,Saúde,Medicamentos e Outros Produtos
+BMEB3,Financeiro,Intermediários Financeiros
+BMEB4,Financeiro,Intermediários Financeiros
+BMGB4,Financeiro,Intermediários Financeiros
+BMIN3,Financeiro,Intermediários Financeiros
+BMIN4,Financeiro,Intermediários Financeiros
+BMKS3,Consumo Cíclico,Viagens e Lazer
+BMOB3,Tecnologia da Informação,Programas e Serviços
+BNBR3,Financeiro,Intermediários Financeiros
+BOAC34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BOAS3,Financeiro,Serviços Financeiros Diversos
+BOBR4,Consumo não Cíclico,Produtos de Uso Pessoal e de Limpeza
+BOVA11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BOVB11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BOVV11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BOVX11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BPAC11,Financeiro,Intermediários Financeiros
+BPAC3,Financeiro,Intermediários Financeiros
+BPAC5,Financeiro,Intermediários Financeiros
+BPAN4,Financeiro,Intermediários Financeiros
+BRAP3,Materiais Básicos,Mineração
+BRAP4,Materiais Básicos,Mineração
+BRBI11,Financeiro,Intermediários Financeiros
+BRCO11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BRCR11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+BRFS3,Consumo não Cíclico,Alimentos Processados
+BRGE11,Financeiro,Previdência e Seguros
+BRGE12,Financeiro,Previdência e Seguros
+BRGE3,Financeiro,Previdência e Seguros
+BRGE5,Financeiro,Previdência e Seguros
+BRGE6,Financeiro,Previdência e Seguros
+BRGE8,Financeiro,Previdência e Seguros
+BRIT3,Comunicações,Telecomunicações
+BRIV3,Financeiro,Intermediários Financeiros
+BRIV4,Financeiro,Intermediários Financeiros
+BRKM3,Materiais Básicos,Químicos
+BRKM5,Materiais Básicos,Químicos
+BRKM6,Materiais Básicos,Químicos
+BRML3,Financeiro,Exploração de Imóveis
+BRPR3,Financeiro,Exploração de Imóveis
+BRSR3,Financeiro,Intermediários Financeiros
+BRSR5,Financeiro,Intermediários Financeiros
+BRSR6,Financeiro,Intermediários Financeiros
+BSLI3,Financeiro,Intermediários Financeiros
+BSLI4,Financeiro,Intermediários Financeiros
+BTLG11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+CALI4,Consumo Cíclico,Construção Civil
+CAMB3,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+CAML3,Consumo não Cíclico,Alimentos Processados
+CARD3,Bens Industriais,Serviços Diversos
+CASH3,Tecnologia da Informação,Programas e Serviços
+CASN3,Utilidade Pública,Água e Saneamento
+CBAV3,Materiais Básicos,Mineração
+CBEE3,Utilidade Pública,Energia Elétrica
+CCRO3,Bens Industriais,Transporte
+CEAB3,Consumo Cíclico,Comércio
+CEBR3,Utilidade Pública,Energia Elétrica
+CEBR5,Utilidade Pública,Energia Elétrica
+CEBR6,Utilidade Pública,Energia Elétrica
+CEDO3,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+CEDO4,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+CEEB3,Utilidade Pública,Energia Elétrica
+CEEB5,Utilidade Pública,Energia Elétrica
+CEED3,Utilidade Pública,Energia Elétrica
+CEED4,Utilidade Pública,Energia Elétrica
+CEGR3,Utilidade Pública,Gás
+CEPE3,Utilidade Pública,Energia Elétrica
+CEPE5,Utilidade Pública,Energia Elétrica
+CEPE6,Utilidade Pública,Energia Elétrica
+CESP3,Utilidade Pública,Energia Elétrica
+CESP5,Utilidade Pública,Energia Elétrica
+CESP6,Utilidade Pública,Energia Elétrica
+CGAS3,Utilidade Pública,Gás
+CGAS5,Utilidade Pública,Gás
+CGRA3,Consumo Cíclico,Comércio
+CGRA4,Consumo Cíclico,Comércio
+CHVX34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+CIEL3,Financeiro,Serviços Financeiros Diversos
+CLSA3,Tecnologia da Informação,Programas e Serviços
+CLSC3,Utilidade Pública,Energia Elétrica
+CLSC4,Utilidade Pública,Energia Elétrica
+CMCS34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+CMIG3,Utilidade Pública,Energia Elétrica
+CMIG4,Utilidade Pública,Energia Elétrica
+CMIN3,Materiais Básicos,Mineração
+COCA34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+COCE3,Utilidade Pública,Energia Elétrica
+COCE5,Utilidade Pública,Energia Elétrica
+COGN3,Consumo Cíclico,Diversos
+CORR4,Financeiro,Exploração de Imóveis
+CPFE3,Utilidade Pública,Energia Elétrica
+CPLE11,Utilidade Pública,Energia Elétrica
+CPLE3,Utilidade Pública,Energia Elétrica
+CPLE5,Utilidade Pública,Energia Elétrica
+CPLE6,Utilidade Pública,Energia Elétrica
+CPTS11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+CRDE3,Consumo Cíclico,Construção Civil
+CRFB3,Consumo não Cíclico,Comércio e Distribuição
+CRIV3,Financeiro,Intermediários Financeiros
+CRIV4,Financeiro,Intermediários Financeiros
+CRPG3,Materiais Básicos,Químicos
+CRPG5,Materiais Básicos,Químicos
+CRPG6,Materiais Básicos,Químicos
+CSAB3,Financeiro,Previdência e Seguros
+CSAB4,Financeiro,Previdência e Seguros
+CSAN3,"Petróleo, Gás e Biocombustíveis","Petróleo, Gás e Biocombustíveis"
+CSED3,Consumo Cíclico,Diversos
+CSMG3,Utilidade Pública,Água e Saneamento
+CSNA3,Materiais Básicos,Siderurgia e Metalurgia
+CSRN3,Utilidade Pública,Energia Elétrica
+CSRN5,Utilidade Pública,Energia Elétrica
+CSRN6,Utilidade Pública,Energia Elétrica
+CTKA3,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+CTKA4,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+CTNM3,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+CTNM4,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+CTSA3,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+CTSA4,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+CURY3,Consumo Cíclico,Construção Civil
+CVBI11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+CVCB3,Consumo Cíclico,Viagens e Lazer
+CXSE3,Financeiro,Previdência e Seguros
+CYRE3,Consumo Cíclico,Construção Civil
+DASA3,Saúde,Análises e Diagnósticos
+DESK3,Comunicações,Telecomunicações
+DEVA11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+DEXP3,Materiais Básicos,Químicos
+DEXP4,Materiais Básicos,Químicos
+DIRR3,Consumo Cíclico,Construção Civil
+DISB34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+DMMO3,"Petróleo, Gás e Biocombustíveis","Petróleo, Gás e Biocombustíveis"
+DMVF3,Saúde,Comércio e Distribuição
+DOHL3,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+DOHL4,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+DOTZ3,Tecnologia da Informação,Programas e Serviços
+DTCY3,Bens Industriais,Serviços Diversos
+DXCO3,Materiais Básicos,Madeira e Papel
+EALT3,Bens Industriais,Máquinas e Equipamentos
+EALT4,Bens Industriais,Máquinas e Equipamentos
+ECOR3,Bens Industriais,Transporte
+ECPR3,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+ECPR4,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+EEEL3,Utilidade Pública,Energia Elétrica
+EEEL4,Utilidade Pública,Energia Elétrica
+EGIE3,Utilidade Pública,Energia Elétrica
+EKTR3,Utilidade Pública,Energia Elétrica
+EKTR4,Utilidade Pública,Energia Elétrica
+ELET3,Utilidade Pública,Energia Elétrica
+ELET5,Utilidade Pública,Energia Elétrica
+ELET6,Utilidade Pública,Energia Elétrica
+ELMD3,Comunicações,Mídia
+EMAE4,Utilidade Pública,Energia Elétrica
+EMBR3,Bens Industriais,Material de Transporte
+ENAT3,"Petróleo, Gás e Biocombustíveis","Petróleo, Gás e Biocombustíveis"
+ENBR3,Utilidade Pública,Energia Elétrica
+ENEV3,Utilidade Pública,Energia Elétrica
+ENGI11,Utilidade Pública,Energia Elétrica
+ENGI3,Utilidade Pública,Energia Elétrica
+ENGI4,Utilidade Pública,Energia Elétrica
+ENJU3,Tecnologia da Informação,Programas e Serviços
+ENMT3,Utilidade Pública,Energia Elétrica
+ENMT4,Utilidade Pública,Energia Elétrica
+EPAR3,Financeiro,Holdings Diversificadas
+EQPA3,Utilidade Pública,Energia Elétrica
+EQPA5,Utilidade Pública,Energia Elétrica
+EQPA6,Utilidade Pública,Energia Elétrica
+EQPA7,Utilidade Pública,Energia Elétrica
+EQTL3,Utilidade Pública,Energia Elétrica
+ESPA3,Consumo não Cíclico,Produtos de Uso Pessoal e de Limpeza
+ESTR3,Consumo Cíclico,Viagens e Lazer
+ESTR4,Consumo Cíclico,Viagens e Lazer
+ETER3,Bens Industriais,Construção e Engenharia
+ETHE11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+EUCA3,Materiais Básicos,Madeira e Papel
+EUCA4,Materiais Básicos,Madeira e Papel
+EURP11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+EVEN3,Consumo Cíclico,Construção Civil
+EXXO34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+EZTC3,Consumo Cíclico,Construção Civil
+FBOK34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+FESA3,Materiais Básicos,Siderurgia e Metalurgia
+FESA4,Materiais Básicos,Siderurgia e Metalurgia
+FHER3,Materiais Básicos,Químicos
+FIND11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+FIQE3,Comunicações,Telecomunicações
+FLRY3,Saúde,Análises e Diagnósticos
+FNAM11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+FNCN3,Financeiro,Intermediários Financeiros
+FNOR11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+FRAS3,Bens Industriais,Material de Transporte
+FRIO3,Bens Industriais,Máquinas e Equipamentos
+FRTA3,Consumo não Cíclico,Agropecuária
+G2DI33,Financeiro,Serviços Financeiros Diversos
+GALG11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+GEPA3,Utilidade Pública,Energia Elétrica
+GEPA4,Utilidade Pública,Energia Elétrica
+GFSA3,Consumo Cíclico,Construção Civil
+GGBR3,Materiais Básicos,Siderurgia e Metalurgia
+GGBR4,Materiais Básicos,Siderurgia e Metalurgia
+GGPS3,Bens Industriais,Transporte
+GGRC11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+GMAT3,Consumo não Cíclico,Comércio e Distribuição
+GMCO34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+GNDI3,Saúde,Análises e Diagnósticos
+GOAU3,Materiais Básicos,Siderurgia e Metalurgia
+GOAU4,Materiais Básicos,Siderurgia e Metalurgia
+GOGL34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+GOLD11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+GOLL4,Bens Industriais,Transporte
+GPAR3,Utilidade Pública,Energia Elétrica
+GPIV33,Financeiro,Serviços Financeiros Diversos
+GRND3,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+GSHP3,Financeiro,Exploração de Imóveis
+GUAR3,Consumo Cíclico,Comércio
+HABT11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+HAGA3,Bens Industriais,Construção e Engenharia
+HAGA4,Bens Industriais,Construção e Engenharia
+HAPV3,Saúde,Análises e Diagnósticos
+HASH11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+HBOR3,Consumo Cíclico,Construção Civil
+HBRE3,Financeiro,Exploração de Imóveis
+HBSA3,Bens Industriais,Transporte
+HBTS5,Financeiro,Exploração de Imóveis
+HCTR11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+HETA3,Consumo Cíclico,Utilidades Domésticas
+HETA4,Consumo Cíclico,Utilidades Domésticas
+HFOF11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+HGBS11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+HGCR11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+HGLG11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+HGRE11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+HGRU11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+HOME34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+HOOT4,Consumo Cíclico,Hoteis e Restaurantes
+HSML11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+HYPE3,Saúde,Comércio e Distribuição
+IFCM3,Tecnologia da Informação,Programas e Serviços
+IGBR3,Financeiro,Exploração de Imóveis
+IGTA3,Financeiro,Exploração de Imóveis
+IMAB11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+IMBB11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+INEP3,Bens Industriais,Máquinas e Equipamentos
+INEP4,Bens Industriais,Máquinas e Equipamentos
+INTB3,Tecnologia da Informação,Computadores e Equipamentos
+IRBR3,Financeiro,Previdência e Seguros
+IRDM11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+ITSA3,Financeiro,Intermediários Financeiros
+ITSA4,Financeiro,Intermediários Financeiros
+ITUB3,Financeiro,Intermediários Financeiros
+ITUB4,Financeiro,Intermediários Financeiros
+IVVB11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+JALL3,Consumo não Cíclico,Alimentos Processados
+JBSS3,Consumo não Cíclico,Alimentos Processados
+JFEN3,Consumo Cíclico,Construção Civil
+JHSF3,Consumo Cíclico,Construção Civil
+JNJB34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+JOPA3,Consumo não Cíclico,Alimentos Processados
+JOPA4,Consumo não Cíclico,Alimentos Processados
+JPMC34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+JPSA3,Financeiro,Exploração de Imóveis
+JSLG3,Bens Industriais,Transporte
+JSRE11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+KDIF11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+KEPL3,Bens Industriais,Máquinas e Equipamentos
+KISU11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+KLBN11,Materiais Básicos,Madeira e Papel
+KLBN3,Materiais Básicos,Madeira e Papel
+KLBN4,Materiais Básicos,Madeira e Papel
+KNCR11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+KNHY11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+KNIP11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+KNRI11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+KNSC11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+KRSA3,Saúde,Serviços Médicos
+LAME3,Consumo Cíclico,Comércio
+LAME4,Consumo Cíclico,Comércio
+LAND3,Consumo não Cíclico,Agropecuária
+LAVV3,Consumo Cíclico,Construção Civil
+LCAM3,Consumo Cíclico,Diversos
+LEVE3,Consumo Cíclico,Automóveis e Motocicletas
+LIGT3,Utilidade Pública,Energia Elétrica
+LIPR3,Utilidade Pública,Energia Elétrica
+LJQQ3,Consumo Cíclico,Comércio
+LLIS3,Consumo Cíclico,Comércio
+LOGG3,Financeiro,Exploração de Imóveis
+LOGN3,Bens Industriais,Transporte
+LPSB3,Financeiro,Exploração de Imóveis
+LREN3,Consumo Cíclico,Comércio
+LUPA3,"Petróleo, Gás e Biocombustíveis","Petróleo, Gás e Biocombustíveis"
+LUXM4,Bens Industriais,Transporte
+LVBI11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+LVTC3,Tecnologia da Informação,Programas e Serviços
+LWSA3,Tecnologia da Informação,Programas e Serviços
+M1RN34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+MALL11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+MAPT3,Outros,Outros
+MAPT4,Outros,Outros
+MATD3,Saúde,Serviços Médicos
+MBLY3,Consumo Cíclico,Comércio
+MCCI11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+MDIA3,Consumo não Cíclico,Alimentos Processados
+MDNE3,Consumo Cíclico,Construção Civil
+MEAL3,Consumo Cíclico,Hoteis e Restaurantes
+MELI34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+MELK3,Consumo Cíclico,Construção Civil
+MERC3,Financeiro,Intermediários Financeiros
+MERC4,Financeiro,Intermediários Financeiros
+MGEL4,Materiais Básicos,Siderurgia e Metalurgia
+MGFF11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+MGLU3,Consumo Cíclico,Comércio
+MILS3,Bens Industriais,Construção e Engenharia
+MLAS3,Tecnologia da Informação,Computadores e Equipamentos
+MMXM3,Materiais Básicos,Mineração
+MNDL3,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+MNPR3,Consumo não Cíclico,Alimentos Processados
+MOAR3,Financeiro,Holdings Diversificadas
+MODL11,Financeiro,Intermediários Financeiros
+MODL3,Financeiro,Intermediários Financeiros
+MODL4,Financeiro,Intermediários Financeiros
+MOSI3,Tecnologia da Informação,Programas e Serviços
+MOVI3,Consumo Cíclico,Diversos
+MRFG3,Consumo não Cíclico,Alimentos Processados
+MRSA3B,Bens Industriais,Transporte
+MRSA5B,Bens Industriais,Transporte
+MRSA6B,Bens Industriais,Transporte
+MRVE3,Consumo Cíclico,Construção Civil
+MSCD34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+MSFT34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+MSPA3,Materiais Básicos,Madeira e Papel
+MSPA4,Materiais Básicos,Madeira e Papel
+MTIG4,Materiais Básicos,Embalagens
+MTRE3,Consumo Cíclico,Construção Civil
+MTSA3,Bens Industriais,Máquinas e Equipamentos
+MTSA4,Bens Industriais,Máquinas e Equipamentos
+MULT3,Financeiro,Exploração de Imóveis
+MWET3,Bens Industriais,Material de Transporte
+MWET4,Bens Industriais,Material de Transporte
+MXRF11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+MYPK3,Consumo Cíclico,Automóveis e Motocicletas
+NASD11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+NEOE3,Utilidade Pública,Energia Elétrica
+NFLX34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+NGRD3,Tecnologia da Informação,Programas e Serviços
+NIKE34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+NINJ3,Tecnologia da Informação,Programas e Serviços
+NORD3,Bens Industriais,Máquinas e Equipamentos
+NTCO3,Consumo não Cíclico,Produtos de Uso Pessoal e de Limpeza
+NUTR3,Materiais Básicos,Químicos
+NVDC34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+ODER4,Consumo não Cíclico,Alimentos Processados
+ODPV3,Saúde,Análises e Diagnósticos
+OFSA3,Saúde,Medicamentos e Outros Produtos
+OIBR3,Comunicações,Telecomunicações
+OIBR4,Comunicações,Telecomunicações
+OMGE3,Utilidade Pública,Energia Elétrica
+ONCO3,Saúde,Serviços Médicos
+OPCT3,Bens Industriais,Transporte
+ORVR3,Utilidade Pública,Água e Saneamento
+OSXB3,"Petróleo, Gás e Biocombustíveis","Petróleo, Gás e Biocombustíveis"
+PARD3,Saúde,Análises e Diagnósticos
+PATI3,Materiais Básicos,Siderurgia e Metalurgia
+PATI4,Materiais Básicos,Siderurgia e Metalurgia
+PCAR3,Consumo não Cíclico,Comércio e Distribuição
+PDGR3,Consumo Cíclico,Construção Civil
+PDTC3,Financeiro,Serviços Financeiros Diversos
+PEAB3,Financeiro,Holdings Diversificadas
+PEAB4,Financeiro,Holdings Diversificadas
+PETR3,"Petróleo, Gás e Biocombustíveis","Petróleo, Gás e Biocombustíveis"
+PETR4,"Petróleo, Gás e Biocombustíveis","Petróleo, Gás e Biocombustíveis"
+PETZ3,Consumo Cíclico,Comércio
+PFIZ34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+PFRM3,Saúde,Comércio e Distribuição
+PGMN3,Saúde,Comércio e Distribuição
+PIBB11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+PINE4,Financeiro,Intermediários Financeiros
+PLAS3,Consumo Cíclico,Automóveis e Motocicletas
+PLPL3,Consumo Cíclico,Construção Civil
+PMAM3,Materiais Básicos,Siderurgia e Metalurgia
+PNVL3,Saúde,Comércio e Distribuição
+POMO3,Bens Industriais,Material de Transporte
+POMO4,Bens Industriais,Material de Transporte
+POSI3,Tecnologia da Informação,Computadores e Equipamentos
+POWE3,Utilidade Pública,Energia Elétrica
+PPEI11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+PPLA11,Financeiro,Serviços Financeiros Diversos
+PRIO3,"Petróleo, Gás e Biocombustíveis","Petróleo, Gás e Biocombustíveis"
+PRNR3,Bens Industriais,Serviços Diversos
+PSSA3,Financeiro,Previdência e Seguros
+PTBL3,Bens Industriais,Construção e Engenharia
+PTNT3,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+PTNT4,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+PVBI11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+PYPL34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+QBTC11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+QETH11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+QUAL3,Saúde,Análises e Diagnósticos
+RADL3,Saúde,Comércio e Distribuição
+RAIL3,Bens Industriais,Transporte
+RAIZ4,"Petróleo, Gás e Biocombustíveis","Petróleo, Gás e Biocombustíveis"
+RANI3,Materiais Básicos,Madeira e Papel
+RAPT3,Bens Industriais,Material de Transporte
+RAPT4,Bens Industriais,Material de Transporte
+RBRF11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+RBRP11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+RBRR11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+RCSL3,Bens Industriais,Material de Transporte
+RCSL4,Bens Industriais,Material de Transporte
+RDNI3,Consumo Cíclico,Construção Civil
+RDOR3,Saúde,Serviços Médicos
+RECR11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+RECV3,"Petróleo, Gás e Biocombustíveis","Petróleo, Gás e Biocombustíveis"
+REDE3,Utilidade Pública,Energia Elétrica
+RENT3,Consumo Cíclico,Diversos
+RNEW11,Utilidade Pública,Energia Elétrica
+RNEW3,Utilidade Pública,Energia Elétrica
+RNEW4,Utilidade Pública,Energia Elétrica
+ROMI3,Bens Industriais,Máquinas e Equipamentos
+RPAD3,Financeiro,Intermediários Financeiros
+RPAD5,Financeiro,Intermediários Financeiros
+RPAD6,Financeiro,Intermediários Financeiros
+RPMG3,"Petróleo, Gás e Biocombustíveis","Petróleo, Gás e Biocombustíveis"
+RRRP3,"Petróleo, Gás e Biocombustíveis","Petróleo, Gás e Biocombustíveis"
+RSID3,Consumo Cíclico,Construção Civil
+RSUL4,Bens Industriais,Material de Transporte
+RZTR11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+SANB11,Financeiro,Intermediários Financeiros
+SANB3,Financeiro,Intermediários Financeiros
+SANB4,Financeiro,Intermediários Financeiros
+SAPR11,Utilidade Pública,Água e Saneamento
+SAPR3,Utilidade Pública,Água e Saneamento
+SAPR4,Utilidade Pública,Água e Saneamento
+SBFG3,Consumo Cíclico,Comércio
+SBSP3,Utilidade Pública,Água e Saneamento
+SCAR3,Financeiro,Exploração de Imóveis
+SDIL11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+SEER3,Consumo Cíclico,Diversos
+SEQL3,Bens Industriais,Transporte
+SGPS3,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+SHOW3,Consumo Cíclico,Viagens e Lazer
+SHUL3,Bens Industriais,Máquinas e Equipamentos
+SHUL4,Bens Industriais,Máquinas e Equipamentos
+SIMH3,Financeiro,Holdings Diversificadas
+SLCE3,Consumo não Cíclico,Agropecuária
+SLED3,Consumo Cíclico,Comércio
+SLED4,Consumo Cíclico,Comércio
+SMAC11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+SMAL11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+SMFT3,Consumo Cíclico,Viagens e Lazer
+SMTO3,Consumo não Cíclico,Alimentos Processados
+SNSY3,Materiais Básicos,Materiais Diversos
+SNSY5,Materiais Básicos,Materiais Diversos
+SNSY6,Materiais Básicos,Materiais Diversos
+SOJA3,Consumo não Cíclico,Agropecuária
+SOMA3,Consumo Cíclico,Comércio
+SOND3,Bens Industriais,Construção e Engenharia
+SOND5,Bens Industriais,Construção e Engenharia
+SOND6,Bens Industriais,Construção e Engenharia
+SPXI11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+SQIA3,Tecnologia da Informação,Programas e Serviços
+SSFO34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+STBP3,Bens Industriais,Transporte
+SULA11,Financeiro,Previdência e Seguros
+SULA3,Financeiro,Previdência e Seguros
+SULA4,Financeiro,Previdência e Seguros
+SUZB3,Materiais Básicos,Madeira e Papel
+SYNE3,Financeiro,Exploração de Imóveis
+TAEE11,Utilidade Pública,Energia Elétrica
+TAEE3,Utilidade Pública,Energia Elétrica
+TAEE4,Utilidade Pública,Energia Elétrica
+TASA3,Bens Industriais,Máquinas e Equipamentos
+TASA4,Bens Industriais,Máquinas e Equipamentos
+TCNO3,Bens Industriais,Construção e Engenharia
+TCNO4,Bens Industriais,Construção e Engenharia
+TCSA3,Consumo Cíclico,Construção Civil
+TECN3,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+TEKA3,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+TEKA4,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+TELB3,Comunicações,Telecomunicações
+TELB4,Comunicações,Telecomunicações
+TEND3,Consumo Cíclico,Construção Civil
+TFCO4,Consumo Cíclico,Comércio
+TGAR11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+TGMA3,Bens Industriais,Transporte
+TIMS3,Comunicações,Telecomunicações
+TKNO4,Materiais Básicos,Siderurgia e Metalurgia
+TORD11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+TOTS3,Tecnologia da Informação,Programas e Serviços
+TPIS3,Bens Industriais,Transporte
+TRAD3,Tecnologia da Informação,Programas e Serviços
+TRIS3,Consumo Cíclico,Construção Civil
+TRPL3,Utilidade Pública,Energia Elétrica
+TRPL4,Utilidade Pública,Energia Elétrica
+TRXF11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+TSLA34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+TSMC34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+TTEN3,Consumo não Cíclico,Agropecuária
+TUPY3,Bens Industriais,Material de Transporte
+TXRX3,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+TXRX4,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+UCAS3,Consumo Cíclico,Utilidades Domésticas
+UGPA3,"Petróleo, Gás e Biocombustíveis","Petróleo, Gás e Biocombustíveis"
+UNIP3,Materiais Básicos,Químicos
+UNIP5,Materiais Básicos,Químicos
+UNIP6,Materiais Básicos,Químicos
+URPR11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+USIM3,Materiais Básicos,Siderurgia e Metalurgia
+USIM5,Materiais Básicos,Siderurgia e Metalurgia
+USIM6,Materiais Básicos,Siderurgia e Metalurgia
+VALE3,Materiais Básicos,Mineração
+VAMO3,Bens Industriais,Máquinas e Equipamentos
+VBBR3,"Petróleo, Gás e Biocombustíveis","Petróleo, Gás e Biocombustíveis"
+VGIP11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+VIGT11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+VIIA3,Consumo Cíclico,Comércio
+VILG11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+VINO11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+VISA34,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+VISC11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+VITT3,Materiais Básicos,Químicos
+VIVA3,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+VIVR3,Consumo Cíclico,Construção Civil
+VIVT3,Comunicações,Telecomunicações
+VLID3,Bens Industriais,Serviços Diversos
+VRTA11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+VSLH11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+VULC3,Consumo Cíclico,"Tecidos, Vestuário e Calçados"
+VVEO3,Saúde,Serviços Médicos
+WEGE3,Bens Industriais,Máquinas e Equipamentos
+WEST3,Consumo Cíclico,Comércio
+WHRL3,Consumo Cíclico,Utilidades Domésticas
+WHRL4,Consumo Cíclico,Utilidades Domésticas
+WIZS3,Financeiro,Previdência e Seguros
+WLMM3,Bens Industriais,Comércio
+WLMM4,Bens Industriais,Comércio
+WSON33,Bens Industriais,Transporte
+XINA11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+XPBR31,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+XPCI11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+XPLG11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+XPML11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+XPPR11,ETFs/FIIs/BDRs,ETFs/FIIs/BDRs
+YDUQ3,Consumo Cíclico,Diversos
