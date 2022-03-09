@@ -1,4 +1,3 @@
-streamlit
 streamlit_player
 streamlit-aggrid
 streamlit_option_menu
