@@ -18,9 +18,9 @@ st.set_page_config(
 def main():
     # Removing and add pages
     pages = {
-        "Wassuppppp": homepage,
-        'Fundamentals': fundamental_page,
-        'Cathie\'s Portfolio': cathie_portfolio,
+        "Home": homepage,
+        #'Fundamentals': fundamental_page,
+        #'Cathie\'s Portfolio': cathie_portfolio,
     }
 
     st.sidebar.write(' ')
@@ -42,11 +42,11 @@ def main():
 def homepage():
     home.home()
 
-def fundamental_page():
-    fundamentals.fundamentals()
+# def fundamental_page():
+#     fundamentals.fundamentals()
 
-def cathie_portfolio():
-    ark_portfolio.app()
+# def cathie_portfolio():
+#     ark_portfolio.app()
 
 if __name__ == "__main__":
     main()
