@@ -155,10 +155,6 @@ def make_kpi_chart(df, recession):
 
 
 def make_line_chart(df, ydata, recession):
-    recession = [
-        ["2020-02-01", "2020-04-15"],
-        ["2021-11-01", "2022-1-15"],
-    ]
     with st.expander(f"Line Chart for {ydata}", expanded=False):
         fig = px.line(
             df,
