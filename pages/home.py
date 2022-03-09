@@ -3,27 +3,31 @@ import streamlit.components.v1 as components
 from streamlit_player import st_player
 import pandas as pd
 
-def app():
-
-  st.sidebar.title("Resources")
-  with st.sidebar:
-     st.download_button(label="Download button 1", data="https://raw.githubusercontent.com/napoles-uach/MundaneApps/main/links.txt", file_name="some file name.txt", mime='text/txt')
-     st.markdown('> Join my discord community.')
-     components.html("""
-    <iframe src="https://discord.com/widget?id=749377367482433677&theme=dark" width="280" height="380" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-    """, height=400)
-     st.markdown('> My spotify')
-     components.html("""
-    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7LhsgxH9e9ZvF9yxyEz0wR?utm_source=generator" width="100%" height="280" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-    """, height=300)
+def home():
 
   st.subheader("Popular uploads")
   st_player("https://www.youtube.com/watch?v=0G1b4gOsrRE&t=4s")
   st.video("https://www.youtube.com/watch?v=0G1b4gOsrRE&t=4s", format="video/mp4", start_time=0)
 
-
-#   with st.expander("Roadmap", expanded=True): 
-#     st.image("assets/tickersymbolyou-transparent.png")
+  # with st.expander("Roadmap", expanded=True): 
+  #   st.image("assets/tickersymbolyou-transparent.png")
+  with st.sidebar:
+    st.write('---')
+    st.title('Resources')
+    st.markdown('#### Find me on Twitter')
+    components.html("""
+    <a href="https://twitter.com/just_neldivad" class="twitter-follow-button" data-show-screen-name="true" data-show-count="true">Follow @just_neldivad</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    """, height=30,)
+    # st.download_button(label="Download button 1", data="https://raw.githubusercontent.com/napoles-uach/MundaneApps/main/links.txt", file_name="some file name.txt", mime='text/txt')
+    st.markdown('#### Or join my discord community.')
+    components.html("""
+    <iframe src="https://discord.com/widget?id=749377367482433677&theme=dark" width="280" height="380" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    """, height=400)
+    st.markdown('#### Or listen to my Spotify')
+    components.html("""
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/7LhsgxH9e9ZvF9yxyEz0wR?utm_source=generator" width="100%" height="280" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    """, height=300)
 
   col1, col2, col3 = st.columns([1,1,1])
   with col1:
