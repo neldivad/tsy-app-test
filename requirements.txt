@@ -1,4 +1,4 @@
-streamlit==1.1.0
+streamlit
 streamlit_player
 streamlit-aggrid
 streamlit_option_menu
@@ -6,7 +6,6 @@ streamlit_option_menu
 sklearn
 plotly
 matplotlib
-cufflinks
 
 google
 pygsheets
