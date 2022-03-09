@@ -1,5 +1,7 @@
 streamlit
 streamlit_player
+streamlit_option_menu
+st_aggrid
 
 sklearn
 plotly
@@ -8,4 +10,7 @@ cufflinks
 
 google
 pygsheets
+
 yfinance
+yahoo_fin
+investpy
