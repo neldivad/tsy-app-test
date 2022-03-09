@@ -1,6 +1,7 @@
 streamlit
 streamlit_player
-st_aggrid
+st-aggrid
+streamlit_option_menu
 
 sklearn
 plotly
