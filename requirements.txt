@@ -1,6 +1,5 @@
 streamlit
 streamlit_player
-streamlit_option_menu
 st_aggrid
 
 sklearn
