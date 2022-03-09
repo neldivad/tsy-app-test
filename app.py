@@ -10,7 +10,7 @@ from pages import home, fundamentals, ark_portfolio #, pr, , test, corr
 
 st.set_page_config(
      page_title="Ticker Symbol YOU | Channel that invests in you",
-     page_icon="https://www.qed-insights.com/content/images/2021/04/qed-mark-black---600.png",
+     page_icon="https://github.com/neldivad/tsy-app-v1/blob/main/assets/tickersymbolyou-transparent.png",
      layout="wide",
      initial_sidebar_state="expanded",
  )
@@ -36,8 +36,8 @@ def main():
         st.write('Pandas:', pd.__version__)
 
     with st.sidebar:
-        st.markdown('''<small>QED Insights</small>''', unsafe_allow_html=True)
-        st.markdown('''<small>dl.eeee.nv@gmail.com</small>''', unsafe_allow_html=True)
+        st.markdown('''Placeholder text''', )
+        st.markdown('''Placeholder text''', )
     
 def homepage():
     home.home()
