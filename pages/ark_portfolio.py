@@ -290,7 +290,7 @@ def make_line_chart(
     fig.update_yaxes(showline=True, linewidth=2, linecolor='#658e9c', gridcolor='#A2D3C2', zeroline= False,)
 
     fig.layout.images = [dict(
-        source="https://raw.githubusercontent.com/neldivad/tsy-app-test/main/assets/tickersymbolyou-transparent.png",
+        source="https://www.qed-insights.com/content/images/2021/04/qed-horizontal-black---transp-8.png",
         xref="paper", yref="paper",
         x=0.92, y=0.03,
         sizex=0.2, sizey=0.2,
