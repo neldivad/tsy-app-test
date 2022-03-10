@@ -9,8 +9,8 @@ import pandas as pd
 from pages import home, fundamentals, ark_portfolio #, pr, , test, corr
 
 st.set_page_config(
-     page_title="Ticker Symbol YOU | Channel that invests in you",
-     page_icon="https://github.com/neldivad/tsy-app-v1/blob/main/assets/tickersymbolyou-transparent.png",
+     page_title="Placeholder title",
+     page_icon="",
      layout="wide",
      initial_sidebar_state="expanded",
  )
