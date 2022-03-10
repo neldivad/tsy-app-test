@@ -6,8 +6,8 @@ import pandas as pd
 def home():
 
   st.subheader("Popular uploads")
-  st_player("https://www.youtube.com/watch?v=0G1b4gOsrRE&t=4s")
-  st.video("https://www.youtube.com/watch?v=0G1b4gOsrRE&t=4s", format="video/mp4", start_time=0)
+  st_player("https://www.youtube.com/watch?v=_yJWAtev-sY")
+  st.video("https://www.youtube.com/watch?v=_yJWAtev-sY", format="video/mp4", start_time=0)
 
   # with st.expander("Roadmap", expanded=True): 
   #   st.image("assets/tickersymbolyou-transparent.png")
@@ -101,7 +101,7 @@ def home():
 
 
   with col2:
-    st.video("https://www.youtube.com/watch?v=0G1b4gOsrRE&t=4s", format="video/mp4", start_time=0)
+    st.video("https://www.youtube.com/watch?v=_yJWAtev-sY", format="video/mp4", start_time=0)
     with st.expander("Operators", expanded=True):
       st.text("Arithmetic Operators")
       st.write("""
@@ -217,7 +217,7 @@ def home():
       df = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSJ5B9E5p6MbKot2HBwAwkGGr_YxVJWgUdTgUVvamEtI6Vo2IdsqcjUq-MCdVoJD7dYpawtaHxgfSNO/pub?output=csv") 
       st.dataframe(df)
 
-    st.video("https://www.youtube.com/watch?v=0G1b4gOsrRE&t=4s", format="video/mp4", start_time=0)
+    st.video("https://www.youtube.com/watch?v=_yJWAtev-sY", format="video/mp4", start_time=0)
     
     with st.expander("Library functions", expanded = True):
       st.write("""
@@ -240,7 +240,7 @@ def home():
   df = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSJ5B9E5p6MbKot2HBwAwkGGr_YxVJWgUdTgUVvamEtI6Vo2IdsqcjUq-MCdVoJD7dYpawtaHxgfSNO/pub?gid=600762557&single=true&output=csv") 
   st.dataframe(df)
   
-  st.video("https://www.youtube.com/watch?v=0G1b4gOsrRE&t=4s", format="video/mp4", start_time=0)
+  st.video("https://www.youtube.com/watch?v=_yJWAtev-sY", format="video/mp4", start_time=0)
 
   st.subheader("Functions")
   st.caption("Functions are used to divide the code and to avoid repetitive task. It provides reusability and readability to code.")
