@@ -59,7 +59,7 @@ def home():
                 """,
              unsafe_allow_html=True)
       
-    st.video("https://www.youtube.com/watch?v=0G1b4gOsrRE&t=4s", format="video/mp4", start_time=0)
+    st.video("https://www.youtube.com/watch?v=_yJWAtev-sY", format="video/mp4", start_time=0)
 
     with st.expander("Constants - const keyword (or) #define preprocessor",
                  expanded=True):
