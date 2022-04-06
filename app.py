@@ -15,8 +15,17 @@ st.set_page_config(
      initial_sidebar_state="expanded",
  )
 
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+
 def main():
     # Removing and add pages
+    st.markdown(hide_st_style, unsafe_allow_html=True)
     pages = {
         "Home": homepage,
         'Fundamentals': fundamental_page,
